@@ -1,0 +1,1848 @@
+
+<!doctype html>
+
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+    <title>奥地利共和国预约系统 - 输入信息</title>
+
+    <link href="/Content/themes/base/jquery.ui.all.css" rel="stylesheet" type="text/css" />
+    <link href="/Content/Site.css" rel="stylesheet" type="text/css" />
+
+    <script src="/Scripts/jquery-1.5.1.min.js" type="text/javascript"></script>   
+</head>
+<body>
+    <div class="page">
+        <div id="header">
+            <table width="100%" class="no-border">
+            <tr>
+            <td valign="top"><h1>奥地利共和国预约系统</h1></td>
+            <td align="right" valign="top">
+            <img src="/img/SHANGHAI.jpg" alt="SHANGHAI" width="300px" />
+            </td>
+            </tr>
+            </table>
+        </div>
+        <div id="main">
+
+    <p class="message-error">此时间已有其他预约</p>
+            
+
+<script type="text/javascript">
+    var language = 'zh';
+</script>
+
+<script src="/Scripts/jquery-ui-1.8.11.min.js" type="text/javascript"></script>
+<script src="/Scripts/jquery.ui.datepicker-de.js" type="text/javascript"></script>
+<script src="/Scripts/jquery.ui.datepicker-zh.js" type="text/javascript"></script>
+<script src="/Scripts/scripts.js" type="text/javascript"></script>
+
+<h2>提交预约</h2>
+
+<form action="/HomeWeb/Appointment" method="post"><div class="validation-summary-valid" data-valmsg-summary="true"><span>以下信息没有输入或输入有误:</span>
+<ul><li style="display:none"></li>
+</ul></div><div class="content-box">
+<div class="content-header">
+    请输入个人信息
+</div>
+
+<table class="no-border">
+    <input id="Office" name="Office" type="hidden" value="SHANGHAI" />
+    <input id="Language" name="Language" type="hidden" value="zh" />
+    <input data-val="true" data-val-number="The field CalendarId must be a number." data-val-required="The CalendarId field is required." id="CalendarId" name="CalendarId" type="hidden" value="950653" />
+	<input id="Token" name="Token" type="hidden" value="1F84B465D4F65F7E48C05DD5524A916446C4F6CEC0446625C24628D7AA372E2E276C29D44E9B04F650164CC9DE41498D11B1C28CBA74E8987A534B17F4EA13078AF306CE0206A0F7D0FF376AF43FF7164FA044356AE95D7E8318F4560D167AE856BD97A2C5E7F108A3DD8351DB6A889D3D19DD810ABFADBFBF11D492F9018C3D7C49659781E365ECB058A3368E732E39B0266A0B05A94D602994E930CC3C0B47C0BE89B728F5AAAE14624D9D50A62892AE31ED352924DD11663D048684DFFEF6913274CF6335F3BE379BF59D5917C8B287CC2B713B18492D2BA20F064681591F14B00DB3C22CA23BFF890F4037571F95E4FAF3AA1EF3FBEAA0CE87B119C0A676898FB11E7C5840535B585533D9317B914E94BD6F6C627431BE9796478CBF24B9D684ABD951DFD3D92981E0145FA2CE98B3D812C9" />
+    <tr>
+    <td align="right">
+        人数
+    </td>
+    <td>
+        1
+        <input data-val="true" data-val-number="The field PersonCount must be a number." data-val-regex="Es sind nur Zahlen zul&amp;#228;ssig" data-val-regex-pattern="\d+" data-val-required="Wert darf nicht leer sein" id="PersonCount" name="PersonCount" type="hidden" value="1" />
+    </td>
+    </tr>
+    <tr>
+    <td align="right">
+        起始时间
+    </td>
+    <td>
+        8/10/2019 10:40
+        <input data-val="true" data-val-required="The StartTime field is required." id="StartTime" name="StartTime" type="hidden" value="8/10/2019 10:40:00" />
+    </td>
+    </tr>
+    <tr>
+    <td align="right">
+         <span class="field-validation-valid" data-valmsg-for="Lastname" data-valmsg-replace="false">!</span> 姓<div class="mandatory-indicator">&nbsp;*</div>
+    </td>
+    <td>
+        <input class="text-edit" id="Lastname" name="Lastname" type="text" value="Dong" />
+    </td>
+    </tr>
+    <tr>
+    <td align="right">
+        <span class="field-validation-valid" data-valmsg-for="Firstname" data-valmsg-replace="false">!</span> 名<div class="mandatory-indicator">&nbsp;*</div>
+    </td>
+    <td>
+        <input class="text-edit" id="Firstname" name="Firstname" type="text" value="Jiang" />
+    </td>
+    </tr>
+    <tr>
+    <td align="right">
+        <span class="field-validation-valid" data-valmsg-for="DateOfBirth" data-valmsg-replace="false">!</span> 出生日期 tt.mm.jjjj按此格式填写日期<div class="mandatory-indicator">&nbsp;*</div>
+    </td>
+    <td>
+		<input id="DateOfBirth" name="DateOfBirth" type="text" value="15/3/2016" />
+		&nbsp;(如 15/3/2016)
+    </td>
+    </tr>
+    <tr>
+    <td align="right">
+        <span class="field-validation-valid" data-valmsg-for="TraveldocumentNumber" data-valmsg-replace="false">!</span> 护照号码<div class="mandatory-indicator">&nbsp;*</div>
+    </td>
+    <td>
+        <input class="text-edit" id="TraveldocumentNumber" name="TraveldocumentNumber" type="text" value="EE4153513" />
+    </td>
+    </tr>
+    <tr>
+    <td align="right">
+        <span class="field-validation-valid" data-valmsg-for="Sex" data-valmsg-replace="false">!</span> 性别<div class="mandatory-indicator">&nbsp;*</div>
+    </td>
+    <td>
+         <select class="dropdown-edit" data-val="true" data-val-number="The field Sex must be a number." id="Sex" name="Sex"><option value="0">请选择</option>
+<option value="2">Female</option>
+<option selected="selected" value="1">Male</option>
+<option value="4">Not Applicable</option>
+<option value="3">Unknown</option>
+</select>
+    </td>
+    </tr>
+    <tr>
+    <td align="right">
+        <span class="field-validation-valid" data-valmsg-for="Street" data-valmsg-replace="false">!</span> 地址<div class="mandatory-indicator">&nbsp;*</div>
+    </td>
+    <td>
+        <input class="text-edit" id="Street" name="Street" type="text" value="Huanghe 1Road,Qingdao" />
+    </td>
+    </tr>
+    <tr>
+    <td align="right">
+        <span class="field-validation-valid" data-valmsg-for="Postcode" data-valmsg-replace="false">!</span> <span class="field-validation-valid" data-valmsg-for="City" data-valmsg-replace="false">!</span> 邮编/城市<div class="mandatory-indicator">&nbsp;*</div>
+    </td>
+    <td>
+        <input class="postcode-edit" id="Postcode" name="Postcode" type="text" value="266071" />
+        <input class="text-edit" id="City" name="City" type="text" value="Qingdao" />
+    </td>
+    </tr>
+    <tr>
+    <td align="right">
+        <span class="field-validation-valid" data-valmsg-for="Country" data-valmsg-replace="false">!</span> 国家<div class="mandatory-indicator">&nbsp;*</div>
+    </td>
+    <td>
+         <select class="dropdown-edit" data-val="true" data-val-number="The field Country must be a number." id="Country" name="Country"><option value="0">请选择</option>
+<option value="3">AFGHANISTAN </option>
+<option value="4">&#197;LAND ISLANDS</option>
+<option value="5">ALBANIA</option>
+<option value="6">ALGERIA</option>
+<option value="7">AMERICAN SAMOA</option>
+<option value="8">ANDORRA</option>
+<option value="9">ANGOLA</option>
+<option value="10">ANGUILLA</option>
+<option value="11">ANTARCTICA</option>
+<option value="12">ANTIGUA AND BARBUDA</option>
+<option value="13">ARGENTINA</option>
+<option value="14">ARMENIA</option>
+<option value="15">ARUBA</option>
+<option value="16">AUSTRALIA</option>
+<option value="1">Austria</option>
+<option value="17">AZERBAIJAN</option>
+<option value="18">BAHAMAS</option>
+<option value="19">BAHRAIN</option>
+<option value="20">BANGLADESH</option>
+<option value="21">BARBADOS</option>
+<option value="22">BELARUS</option>
+<option value="23">BELGIUM</option>
+<option value="24">BELIZE</option>
+<option value="25">BENIN</option>
+<option value="26">BERMUDA</option>
+<option value="27">BHUTAN</option>
+<option value="28">BOLIVIA, PLURINATIONAL STATE OF</option>
+<option value="244">BONAIRE, SAINT EUSTATIUS AND SABA</option>
+<option value="29">BOSNIA AND HERZEGOVINA</option>
+<option value="30">BOTSWANA</option>
+<option value="31">BOUVET ISLAND</option>
+<option value="32">BRAZIL</option>
+<option value="33">BRITISH INDIAN OCEAN TERRITORY</option>
+<option value="34">BRUNEI DARUSSALAM</option>
+<option value="35">BULGARIA</option>
+<option value="36">BURKINA FASO</option>
+<option value="37">BURUNDI</option>
+<option value="38">CAMBODIA</option>
+<option value="39">CAMEROON</option>
+<option value="40">CANADA</option>
+<option value="41">CAPE VERDE</option>
+<option value="42">CAYMAN ISLANDS</option>
+<option value="43">CENTRAL AFRICAN REPUBLIC</option>
+<option value="44">CHAD</option>
+<option value="45">CHILE</option>
+<option selected="selected" value="46">CHINA</option>
+<option value="47">CHRISTMAS ISLAND</option>
+<option value="48">COCOS (KEELING) ISLANDS</option>
+<option value="49">COLOMBIA</option>
+<option value="50">COMOROS</option>
+<option value="51">CONGO</option>
+<option value="52">CONGO, THE DEMOCRATIC REPUBLIC OF THE</option>
+<option value="53">COOK ISLANDS</option>
+<option value="54">COSTA RICA</option>
+<option value="55">C&#212;TE D &#39;IVOIRE</option>
+<option value="56">CROATIA</option>
+<option value="57">CUBA</option>
+<option value="245">CURA&#199;AO</option>
+<option value="58">CYPRUS</option>
+<option value="59">CZECH REPUBLIC</option>
+<option value="60">DENMARK</option>
+<option value="252">Designates a resident of Kosovo to whom a travel document has been issued by the United Nations Interim Administration Mission in Kosovo (UNMIK)</option>
+<option value="251">Designates a specialized agency of the United Nations or one of its officials</option>
+<option value="253">Designates the Sovereign Military Order of Malta or one of its emissaries</option>
+<option value="250">Designates the United Nations Organization or one of its officials</option>
+<option value="61">DJIBOUTI</option>
+<option value="62">DOMINICA</option>
+<option value="63">DOMINICAN REPUBLIC</option>
+<option value="64">ECUADOR</option>
+<option value="65">EGYPT</option>
+<option value="66">EL SALVADOR</option>
+<option value="67">EQUATORIAL GUINEA</option>
+<option value="68">ERITREA</option>
+<option value="69">ESTONIA</option>
+<option value="70">ETHIOPIA</option>
+<option value="71">FALKLAND ISLANDS (MALVINAS)</option>
+<option value="72">FAROE ISLANDS</option>
+<option value="73">FIJI</option>
+<option value="74">FINLAND</option>
+<option value="75">FRANCE</option>
+<option value="76">FRENCH GUIANA</option>
+<option value="77">FRENCH POLYNESIA</option>
+<option value="78">FRENCH SOUTHERN TERRITORIES</option>
+<option value="79">GABON </option>
+<option value="80">GAMBIA</option>
+<option value="81">GEORGIA</option>
+<option value="2">Germany</option>
+<option value="82">GHANA</option>
+<option value="83">GIBRALTAR</option>
+<option value="84">GREECE</option>
+<option value="85">GREENLAND</option>
+<option value="86">GRENADA</option>
+<option value="87">GUADELOUPE</option>
+<option value="88">GUAM</option>
+<option value="89">GUATEMALA</option>
+<option value="90">GUINEA</option>
+<option value="91">GUINEA-BISSAU</option>
+<option value="92">GUYANA</option>
+<option value="93">HAITI</option>
+<option value="94">HEARD ISLAND AND MCDONALD ISLANDS</option>
+<option value="95">HOLY SEE (VATICAN CITY STATE)</option>
+<option value="96">HONDURAS</option>
+<option value="97">HONG KONG</option>
+<option value="98">HUNGARY</option>
+<option value="99">ICELAND</option>
+<option value="100">INDIA</option>
+<option value="101">INDONESIA</option>
+<option value="102">IRAN, ISLAMIC REPUBLIC OF</option>
+<option value="103">IRAQ</option>
+<option value="104">IRELAND</option>
+<option value="105">ISRAEL</option>
+<option value="106">ITALY</option>
+<option value="107">JAMAICA</option>
+<option value="108">JAPAN</option>
+<option value="109">JORDAN</option>
+<option value="110">KAZAKHSTAN</option>
+<option value="111">KENYA</option>
+<option value="112">KIRIBATI</option>
+<option value="113">KOREA, DEMOCRATIC PEOPLE&#39;S REPUBLIC OF</option>
+<option value="114">KOREA, REPUBLIC OF</option>
+<option value="243">KOSOVO</option>
+<option value="115">KUWAIT</option>
+<option value="116">KYRGYZSTAN</option>
+<option value="117">LAO PEOPLE&#39;S DEMOCRATIC REPUBLIC </option>
+<option value="118">LATVIA</option>
+<option value="119">LEBANON</option>
+<option value="120">LESOTHO</option>
+<option value="121">LIBERIA</option>
+<option value="122">LIBYAN ARAB JAMAHIRIYA</option>
+<option value="123">LIECHTENSTEIN</option>
+<option value="124">LITHUANIA</option>
+<option value="125">LUXEMBOURG</option>
+<option value="126">MACAO</option>
+<option value="128">MADAGASCAR</option>
+<option value="129">MALAWI</option>
+<option value="130">MALAYSIA</option>
+<option value="131">MALDIVES</option>
+<option value="132">MALI</option>
+<option value="133">MALTA</option>
+<option value="134">MARSHALL ISLANDS</option>
+<option value="135">MARTINIQUE</option>
+<option value="136">MAURITANIA</option>
+<option value="137">MAURITIUS</option>
+<option value="138">MAYOTTE</option>
+<option value="139">MEXICO</option>
+<option value="140">MICRONESIA, FEDERATED STATES OF</option>
+<option value="141">MOLDOVA, REPUBLIC OF</option>
+<option value="142">MONACO</option>
+<option value="143">MONGOLIA</option>
+<option value="242">MONTENEGRO</option>
+<option value="144">MONTSERRAT</option>
+<option value="145">MOROCCO</option>
+<option value="146">MOZAMBIQUE</option>
+<option value="147">MYANMAR</option>
+<option value="148">NAMIBIA</option>
+<option value="149">NAURU</option>
+<option value="150">NEPAL</option>
+<option value="151">NETHERLANDS</option>
+<option value="153">NEW CALEDONIA</option>
+<option value="154">NEW ZEALAND</option>
+<option value="155">NICARAGUA</option>
+<option value="156">NIGER</option>
+<option value="157">NIGERIA</option>
+<option value="158">NIUE</option>
+<option value="159">NORFOLK ISLAND</option>
+<option value="160">NORTHERN MARIANA ISLANDS</option>
+<option value="161">NORWAY</option>
+<option value="162">OMAN</option>
+<option value="163">PAKISTAN</option>
+<option value="164">PALAU</option>
+<option value="248">Palestine</option>
+<option value="249">Palestinian nationality not recognized by all States</option>
+<option value="165">PALESTINIAN TERRITORY, OCCUPIED</option>
+<option value="166">PANAMA</option>
+<option value="167">PAPUA NEW GUINEA</option>
+<option value="168">PARAGUAY</option>
+<option value="169">PERU</option>
+<option value="170">PHILIPPINES</option>
+<option value="171">PITCAIRN</option>
+<option value="172">POLAND</option>
+<option value="173">PORTUGAL</option>
+<option value="174">PUERTO RICO</option>
+<option value="175">QATAR</option>
+<option value="176">R&#201;UNION</option>
+<option value="177">ROMANIA</option>
+<option value="178">RUSSIAN FEDERATION</option>
+<option value="179">RWANDA</option>
+<option value="180">SAINT HELENA, ASCENSION AND TRISTAN DA CUNHA</option>
+<option value="181">SAINT KITTS AND NEVIS</option>
+<option value="182">SAINT LUCIA</option>
+<option value="247">SAINT MARTIN (FRENCH PART)</option>
+<option value="183">SAINT PIERRE AND MIQUELON</option>
+<option value="184">SAINT VINCENT AND THE GRENADINES</option>
+<option value="185">SAMOA</option>
+<option value="186">SAN MARINO</option>
+<option value="187">SAO TOME AND PRINCIPE</option>
+<option value="188">SAUDI ARABIA</option>
+<option value="189">SENEGAL</option>
+<option value="190">SERBIA</option>
+<option value="191">SEYCHELLES</option>
+<option value="192">SIERRA LEONE</option>
+<option value="193">SINGAPORE</option>
+<option value="246">SINT MAARTEN (DUTCH PART)</option>
+<option value="194">SLOVAKIA</option>
+<option value="195">SLOVENIA</option>
+<option value="196">SOLOMON ISLANDS</option>
+<option value="197">SOMALIA</option>
+<option value="198">SOUTH AFRICA</option>
+<option value="199">SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS</option>
+<option value="254">South Sudan</option>
+<option value="200">SPAIN</option>
+<option value="201">SRI LANKA</option>
+<option value="202">SUDAN</option>
+<option value="203">SURINAME</option>
+<option value="204">SVALBARD AND JAN MAYEN</option>
+<option value="205">SWAZILAND</option>
+<option value="206">SWEDEN</option>
+<option value="207">SWITZERLAND</option>
+<option value="208">SYRIAN ARAB REPUBLIC</option>
+<option value="209">TAIWAN, PROVINCE OF CHINA</option>
+<option value="210">TAJIKISTAN</option>
+<option value="211">TANZANIA, UNITED REPUBLIC OF</option>
+<option value="212">THAILAND</option>
+<option value="127">THE FORMER YUGOSLAV REPUBLIC OF MACEDONIA</option>
+<option value="213">TIMOR-LESTE</option>
+<option value="214">TOGO</option>
+<option value="215">TOKELAU</option>
+<option value="216">TONGA</option>
+<option value="217">TRINIDAD AND TOBAGO</option>
+<option value="218">TUNISIA</option>
+<option value="219">TURKEY</option>
+<option value="220">TURKMENISTAN</option>
+<option value="221">TURKS AND CAICOS ISLANDS</option>
+<option value="222">TUVALU</option>
+<option value="223">UGANDA</option>
+<option value="224">UKRAINE</option>
+<option value="225">UNITED ARAB EMIRATES</option>
+<option value="226">UNITED KINGDOM</option>
+<option value="227">UNITED STATES</option>
+<option value="228">UNITED STATES MINOR OUTLYING ISLANDS</option>
+<option value="241">UNKNOWN</option>
+<option value="229">URUGUAY</option>
+<option value="230">UZBEKISTAN</option>
+<option value="231">VANUATU</option>
+<option value="232">VENEZUELA, BOLIVARIAN REPUBLIC OF</option>
+<option value="233">VIET NAM</option>
+<option value="234">VIRGIN ISLANDS, BRITISH</option>
+<option value="235">VIRGIN ISLANDS, U.S.</option>
+<option value="236">WALLIS AND FUTUNA</option>
+<option value="237">WESTERN SAHARA</option>
+<option value="238">YEMEN</option>
+<option value="239">ZAMBIA</option>
+<option value="240">ZIMBABWE</option>
+</select>
+    </td>
+    </tr>
+    <tr>
+    <td align="right">
+        <span class="field-validation-valid" data-valmsg-for="Telephone" data-valmsg-replace="false">!</span> 电话号码<div class="mandatory-indicator">&nbsp;*</div>
+    </td>
+    <td>
+        <input class="text-edit" id="Telephone" name="Telephone" type="text" value="13726254737" />
+    </td>
+    </tr>
+    <tr>
+    <td align="right">
+        <span class="field-validation-valid" data-valmsg-for="Email" data-valmsg-replace="false">!</span> 电子邮箱
+    </td>
+    <td>
+        <input class="text-edit" id="Email" name="Email" type="text" value="714486244@qq.com" />
+    </td>
+    </tr>
+    <tr>
+    <td align="right">
+        <span class="field-validation-valid" data-valmsg-for="LastnameAtBirth" data-valmsg-replace="false">!</span> 出生时的姓氏<div class="mandatory-indicator">&nbsp;*</div>
+    </td>
+    <td>
+        <input class="text-edit" id="LastnameAtBirth" name="LastnameAtBirth" type="text" value="Dong" />
+    </td>
+    </tr>
+    <tr>
+    <td align="right">
+        <span class="field-validation-valid" data-valmsg-for="NationalityAtBirth" data-valmsg-replace="false">!</span> 出生时的国籍<div class="mandatory-indicator">&nbsp;*</div>
+    </td>
+    <td>
+         <select class="dropdown-edit" data-val="true" data-val-number="The field NationalityAtBirth must be a number." id="NationalityAtBirth" name="NationalityAtBirth"><option value="0">请选择</option>
+<option value="1">AFGHANISTAN</option>
+<option value="2">&#197;LAND ISLANDS</option>
+<option value="3">ALBANIA</option>
+<option value="4">ALGERIA</option>
+<option value="5">AMERICAN SAMOA</option>
+<option value="6">ANDORRA</option>
+<option value="7">ANGOLA</option>
+<option value="8">ANGUILLA</option>
+<option value="9">ANTARCTICA</option>
+<option value="10">ANTIGUA AND BARBUDA</option>
+<option value="11">ARGENTINA</option>
+<option value="12">ARMENIA</option>
+<option value="13">ARUBA</option>
+<option value="14">ASCENSION ISLAND</option>
+<option value="15">AUSTRALIA</option>
+<option value="16">AUSTRIA</option>
+<option value="17">AZERBAIJAN</option>
+<option value="18">BAHAMAS</option>
+<option value="19">BAHRAIN</option>
+<option value="20">BANGLADESH</option>
+<option value="21">BARBADOS</option>
+<option value="22">BELARUS</option>
+<option value="318">Belarus SSR</option>
+<option value="23">BELGIUM</option>
+<option value="24">BELIZE</option>
+<option value="25">BENIN</option>
+<option value="26">BERMUDA</option>
+<option value="27">BHUTAN</option>
+<option value="28">BOLIVIA, PLURINATIONAL STATE OF</option>
+<option value="309">BONAIRE, SAINT EUSTATIUS AND SABA</option>
+<option value="265">BOPHUTHATSWANA</option>
+<option value="29">BOSNIA AND HERZEGOVINA</option>
+<option value="30">BOTSWANA</option>
+<option value="31">BOUVET ISLAND</option>
+<option value="32">BRAZIL</option>
+<option value="266">BRITISH ANTARCTIC TERRITORY</option>
+<option value="303">British Citizen</option>
+<option value="304">British Dependent territories citizen</option>
+<option value="33">BRITISH INDIAN OCEAN TERRITORY</option>
+<option value="305">British National (Overseas)</option>
+<option value="306">British Overseas citizen</option>
+<option value="307">British Protected person</option>
+<option value="308">British Subject</option>
+<option value="34">BRUNEI DARUSSALAM</option>
+<option value="35">BULGARIA</option>
+<option value="36">BURKINA FASO</option>
+<option value="37">BURMA</option>
+<option value="38">BURUNDI</option>
+<option value="39">CAMBODIA</option>
+<option value="40">CAMEROON</option>
+<option value="41">CANADA</option>
+<option value="42">CANARY ISLANDS</option>
+<option value="267">CANTON AND ENDERBURY ISLANDS</option>
+<option value="43">CAPE VERDE</option>
+<option value="44">CAYMAN ISLANDS</option>
+<option value="45">CENTRAL AFRICAN REPUBLIC</option>
+<option value="46">CEUTA, MELILLA</option>
+<option value="47">CHAD</option>
+<option value="48">CHILE</option>
+<option selected="selected" value="49">CHINA</option>
+<option value="50">CHRISTMAS ISLAND</option>
+<option value="268">CISKEI</option>
+<option value="51">CLIPPERTON ISLAND</option>
+<option value="52">COCOS (KEELING) ISLANDS</option>
+<option value="53">COLOMBIA</option>
+<option value="54">COMOROS</option>
+<option value="55">CONGO</option>
+<option value="56">CONGO, THE DEMOCRATIC REPUBLIC OF THE</option>
+<option value="57">COOK ISLANDS</option>
+<option value="58">COSTA RICA</option>
+<option value="59">C&#212;TE D&#39;IVOIRE</option>
+<option value="60">CROATIA</option>
+<option value="61">CUBA</option>
+<option value="310">CURA&#199;AO</option>
+<option value="62">CYPRUS</option>
+<option value="63">CZECH REPUBLIC</option>
+<option value="269">CZECHOSLOVAKIA</option>
+<option value="270">DAHOMEY</option>
+<option value="64">DENMARK</option>
+<option value="323">Designates a resident of Kosovo to whom a travel document has been issued by the United Nations Interim Administration Mission in Kosovo (UNMIK)</option>
+<option value="322">Designates a specialized agency of the United Nations or one of its officials</option>
+<option value="324">Designates the Sovereign Military Order of Malta or one of its emissa</option>
+<option value="321">Designates the United Nations Organization or one of its officials</option>
+<option value="65">DIEGO GARCIA</option>
+<option value="66">DJIBOUTI</option>
+<option value="67">DOMINICA</option>
+<option value="68">DOMINICAN REPUBLIC</option>
+<option value="291">DRONNING MAUD LAND</option>
+<option value="69">EAST TIMOR</option>
+<option value="273">EAST TIMOR (TIMOR PORTUGUESE)</option>
+<option value="70">ECUADOR</option>
+<option value="71">EGYPT</option>
+<option value="72">EL SALVADOR</option>
+<option value="73">EQUATORIAL GUINEA</option>
+<option value="74">ERITREA</option>
+<option value="75">ESTONIA</option>
+<option value="76">ETHIOPIA</option>
+<option value="292">ETHIOPIA (BEFORE ERITREA BROKE AWAY)</option>
+<option value="77">FALKLAND ISLANDS (MALVINAS)</option>
+<option value="78">FAROE ISLANDS</option>
+<option value="79">FIJI</option>
+<option value="80">FINLAND</option>
+<option value="81">FRANCE</option>
+<option value="82">FRANCE, METROPOLITAN</option>
+<option value="83">FRENCH GUIANA</option>
+<option value="84">FRENCH POLYNESIA</option>
+<option value="274">FRENCH SOUTHERN AND ANTARCTIC TERRITORIES</option>
+<option value="85">FRENCH SOUTHERN TERRITORIES</option>
+<option value="275">FRENCH TERRITORY OF THE AFARS AND THE ISSAS</option>
+<option value="86">GABON</option>
+<option value="87">GAMBIA</option>
+<option value="88">GEORGIA</option>
+<option value="272">GERMAN DEMOCRATIC REPUBLIC</option>
+<option value="89">GERMANY</option>
+<option value="293">GERMANY, FEDERAL REPUBLIC OF (WEST GERMANY)</option>
+<option value="90">GHANA</option>
+<option value="91">GIBRALTAR</option>
+<option value="276">GILBERT AND ELLIS ISLANDS</option>
+<option value="92">GREECE</option>
+<option value="93">GREENLAND</option>
+<option value="94">GRENADA</option>
+<option value="95">GUADELOUPE</option>
+<option value="96">GUAM</option>
+<option value="97">GUATEMALA</option>
+<option value="98">GUERNSEY</option>
+<option value="99">GUINEA</option>
+<option value="100">GUINEA-BISSAU</option>
+<option value="101">GUYANA</option>
+<option value="102">HAITI</option>
+<option value="103">HEARD ISLAND AND MCDONALD ISLANDS</option>
+<option value="104">HOLY SEE (VATICAN CITY STATE)</option>
+<option value="105">HONDURAS</option>
+<option value="106">HONG KONG</option>
+<option value="107">HUNGARY</option>
+<option value="108">ICELAND</option>
+<option value="109">INDIA</option>
+<option value="110">INDONESIA</option>
+<option value="315">International Committee of the Red Cross </option>
+<option value="111">IRAN, ISLAMIC REPUBLIC OF</option>
+<option value="112">IRAQ</option>
+<option value="113">IRELAND</option>
+<option value="114">ISLE OF MAN</option>
+<option value="115">ISRAEL</option>
+<option value="116">ITALY</option>
+<option value="117">JAMAICA</option>
+<option value="118">JAPAN</option>
+<option value="119">JERSEY</option>
+<option value="277">JOHNSTON ISLAND</option>
+<option value="120">JORDAN</option>
+<option value="121">KAZAKHSTAN</option>
+<option value="122">KENYA</option>
+<option value="123">KIRIBATI</option>
+<option value="124">KOREA, DEMOCRATIC PEOPLE&#39;S REPUBLIC OF</option>
+<option value="125">KOREA, REPUBLIC OF</option>
+<option value="326">KOSOVO</option>
+<option value="126">KUWAIT</option>
+<option value="127">KYRGYZSTAN</option>
+<option value="128">LAO PEOPLE&#39;S DEMOCRATIC REPUBLIC</option>
+<option value="129">LATVIA</option>
+<option value="130">LEBANON</option>
+<option value="131">LESOTHO</option>
+<option value="132">LIBERIA</option>
+<option value="133">LIBYA FEZZAN</option>
+<option value="134">LIBYAN ARAB JAMAHIRIYA</option>
+<option value="135">LIECHTENSTEIN</option>
+<option value="136">LITHUANIA</option>
+<option value="137">LUXEMBOURG</option>
+<option value="138">MACAO</option>
+<option value="139">MACEDONIA, THE FORMER YUGOSLAV REPUBLIC OF</option>
+<option value="140">MADAGASCAR</option>
+<option value="141">MALAWI</option>
+<option value="142">MALAYSIA</option>
+<option value="143">MALDIVES</option>
+<option value="144">MALI</option>
+<option value="145">MALTA</option>
+<option value="146">MARSHALL ISLANDS</option>
+<option value="147">MARTINIQUE</option>
+<option value="148">MAURITANIA</option>
+<option value="149">MAURITIUS</option>
+<option value="150">MAYOTTE</option>
+<option value="151">MEXICO</option>
+<option value="152">MICRONESIA, FEDERATED STATES OF</option>
+<option value="278">MIDWAY ISLANDS</option>
+<option value="153">MOLDOVA, REPUBLIC OF</option>
+<option value="154">MONACO</option>
+<option value="155">MONGOLIA</option>
+<option value="156">MONTENEGRO</option>
+<option value="157">MONTSERRAT</option>
+<option value="158">MOROCCO</option>
+<option value="159">MOZAMBIQUE</option>
+<option value="160">MYANMAR</option>
+<option value="161">NAMIBIA</option>
+<option value="162">NAURU</option>
+<option value="163">NEPAL</option>
+<option value="164">NETHERLANDS</option>
+<option value="165">NETHERLANDS ANTILLES</option>
+<option value="294">NETHERLANDS ANTILLES (BEFORE ARUBA BROKE AWAY)</option>
+<option value="166">NEUTRAL ZONE</option>
+<option value="279">NEUTRAL ZONE BETWEEN SAUDI ARABIA (SA) AND IRAQ (IQ)</option>
+<option value="167">NEW CALEDONIA</option>
+<option value="280">NEW HEBRIDES</option>
+<option value="168">NEW ZEALAND</option>
+<option value="169">NICARAGUA</option>
+<option value="170">NIGER</option>
+<option value="171">NIGERIA</option>
+<option value="172">NIUE</option>
+<option value="173">NORFOLK ISLAND</option>
+<option value="174">NORTHERN MARIANA ISLANDS</option>
+<option value="175">NORWAY</option>
+<option value="9999">NOT APPLICABLE</option>
+<option value="176">OMAN</option>
+<option value="285">PACIFIC ISLANDS, TRUST TERRITORY OF THE</option>
+<option value="177">PAKISTAN</option>
+<option value="178">PALAU</option>
+<option value="319">Palestine</option>
+<option value="320">Palestinian nationality not recognized by all States</option>
+<option value="179">PALESTINIAN TERRITORY, OCCUPIED</option>
+<option value="180">PANAMA</option>
+<option value="295">PANAMA (BEFORE MERGING WITH PANAMA CANAL ZONE)</option>
+<option value="281">PANAMA CANAL ZONE</option>
+<option value="181">PAPUA NEW GUINEA</option>
+<option value="182">PARAGUAY</option>
+<option value="183">PERU</option>
+<option value="184">PHILIPPINES</option>
+<option value="185">PITCAIRN</option>
+<option value="186">POLAND</option>
+<option value="187">PORTUGAL</option>
+<option value="188">PUERTO RICO</option>
+<option value="189">QATAR</option>
+<option value="302">REFUGEE (OTHER)</option>
+<option value="301">REFUGEE (1951 CONVENTION)</option>
+<option value="286">RESIDENT OF KOSOVO (UNMIK)</option>
+<option value="190">R&#201;UNION</option>
+<option value="283">RHODESIA</option>
+<option value="191">ROMANIA</option>
+<option value="192">RUSSIAN FEDERATION</option>
+<option value="193">RWANDA</option>
+<option value="194">SAINT BARTH&#201;LEMY</option>
+<option value="195">SAINT HELENA, ASCENSION AND TRISTAN DA CUNHA</option>
+<option value="196">SAINT KITTS AND NEVIS</option>
+<option value="296">SAINT KITTS-NEVIS-ANGUILLA</option>
+<option value="197">SAINT LUCIA</option>
+<option value="198">SAINT MARTIN</option>
+<option value="312">SAINT MARTIN (FRENCH PART)</option>
+<option value="199">SAINT PIERRE AND MIQUELON</option>
+<option value="200">SAINT VINCENT</option>
+<option value="201">SAINT VINCENT AND THE GRENADINES</option>
+<option value="202">SAMOA</option>
+<option value="203">SAN MARINO</option>
+<option value="204">SAO TOME AND PRINCIPE</option>
+<option value="205">SAUDI ARABIA</option>
+<option value="206">SENEGAL</option>
+<option value="207">SERBIA</option>
+<option value="208">SERBIA AND MONTENEGRO</option>
+<option value="299">SERBIA AND MONTENEGRO (YUGOSLAVIA, FEDERAL REPUBLIC OF)</option>
+<option value="209">SEYCHELLES</option>
+<option value="210">SIERRA LEONE</option>
+<option value="284">SIKKIM</option>
+<option value="211">SINGAPORE</option>
+<option value="311">SINT MAARTEN (DUTCH PART)</option>
+<option value="212">SLOVAKIA</option>
+<option value="213">SLOVENIA</option>
+<option value="214">SOLOMON ISLANDS</option>
+<option value="215">SOMALIA</option>
+<option value="216">SOUTH AFRICA</option>
+<option value="217">SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS</option>
+<option value="325">SOUTH SUDAN</option>
+<option value="317">Soviet Union</option>
+<option value="218">SPAIN</option>
+<option value="219">SRI LANKA</option>
+<option value="264">STATELESS (1954 CONVENTION)</option>
+<option value="220">SUDAN</option>
+<option value="221">SURINAME</option>
+<option value="222">SVALBARD AND JAN MAYEN</option>
+<option value="223">SWAZILAND</option>
+<option value="224">SWEDEN</option>
+<option value="225">SWITZERLAND</option>
+<option value="226">SYRIAN ARAB REPUBLIC</option>
+<option value="227">TAIWAN, PROVINCE OF CHINA</option>
+<option value="228">TAJIKISTAN</option>
+<option value="229">TANZANIA, UNITED REPUBLIC OF</option>
+<option value="230">THAILAND</option>
+<option value="314">Tibet</option>
+<option value="231">TIMOR-LESTE</option>
+<option value="232">TOGO</option>
+<option value="233">TOKELAU</option>
+<option value="234">TONGA</option>
+<option value="235">TRINIDAD AND TOBAGO</option>
+<option value="236">TRISTAN DA CUNHA</option>
+<option value="237">TUNISIA</option>
+<option value="238">TURKEY</option>
+<option value="239">TURKMENISTAN</option>
+<option value="240">TURKS AND CAICOS ISLANDS</option>
+<option value="241">TUVALU</option>
+<option value="242">UGANDA</option>
+<option value="243">UKRAINE</option>
+<option value="316">UNHCR</option>
+<option value="244">UNITED ARAB EMIRATES</option>
+<option value="245">UNITED KINGDOM</option>
+<option value="313">United Nations (UN)</option>
+<option value="246">UNITED STATES</option>
+<option value="247">UNITED STATES MINOR OUTLYING ISLANDS</option>
+<option value="263">UNKNOWN</option>
+<option value="282">UNSPECIFIED</option>
+<option value="288">UPPER VOLTA (HAUTE-VOLTA)</option>
+<option value="248">URUGUAY</option>
+<option value="287">U.S. MISCELLANEOUS PACIFIC ISLANDS</option>
+<option value="249">USSR</option>
+<option value="250">UZBEKISTAN</option>
+<option value="251">VANUATU</option>
+<option value="289">VENDA</option>
+<option value="252">VENEZUELA, BOLIVARIAN REPUBLIC OF</option>
+<option value="271">VIET-NAM, DEMOCRATIC REPUBLIC OF (NORTH VIETNAM)</option>
+<option value="300">VIET-NAM, REPUBLIC OF (SOUTH VIETNAM)</option>
+<option value="253">VIET-NAM, SOCIALIST REPUBLIC OF</option>
+<option value="254">VIRGIN ISLANDS, BRITISH</option>
+<option value="255">VIRGIN ISLANDS, U.S.</option>
+<option value="290">WAKE ISLAND</option>
+<option value="256">WALLIS AND FUTUNA</option>
+<option value="257">WESTERN SAHARA</option>
+<option value="258">YEMEN</option>
+<option value="298">YEMEN ARAB REPUBLIC (NORTH YEMEN)</option>
+<option value="297">YEMEN, DEMOCRATIC (SOUTH YEMEN)</option>
+<option value="259">YUGOSLAVIA</option>
+<option value="260">ZAIRE</option>
+<option value="261">ZAMBIA</option>
+<option value="262">ZIMBABWE</option>
+</select>
+    </td>
+    </tr>
+    <tr>
+    <td align="right">
+        <span class="field-validation-valid" data-valmsg-for="CountryOfBirth" data-valmsg-replace="false">!</span> 出生所在国<div class="mandatory-indicator">&nbsp;*</div>
+    </td>
+    <td>
+         <select class="dropdown-edit" data-val="true" data-val-number="The field CountryOfBirth must be a number." id="CountryOfBirth" name="CountryOfBirth"><option value="0">请选择</option>
+<option value="1">AFGHANISTAN</option>
+<option value="2">&#197;LAND ISLANDS</option>
+<option value="3">ALBANIA</option>
+<option value="4">ALGERIA</option>
+<option value="5">AMERICAN SAMOA</option>
+<option value="6">ANDORRA</option>
+<option value="7">ANGOLA</option>
+<option value="8">ANGUILLA</option>
+<option value="9">ANTARCTICA</option>
+<option value="10">ANTIGUA AND BARBUDA</option>
+<option value="11">ARGENTINA</option>
+<option value="12">ARMENIA</option>
+<option value="13">ARUBA</option>
+<option value="14">ASCENSION ISLAND</option>
+<option value="15">AUSTRALIA</option>
+<option value="16">AUSTRIA</option>
+<option value="17">AZERBAIJAN</option>
+<option value="18">BAHAMAS</option>
+<option value="19">BAHRAIN</option>
+<option value="20">BANGLADESH</option>
+<option value="21">BARBADOS</option>
+<option value="22">BELARUS</option>
+<option value="318">Belarus SSR</option>
+<option value="23">BELGIUM</option>
+<option value="24">BELIZE</option>
+<option value="25">BENIN</option>
+<option value="26">BERMUDA</option>
+<option value="27">BHUTAN</option>
+<option value="28">BOLIVIA, PLURINATIONAL STATE OF</option>
+<option value="309">BONAIRE, SAINT EUSTATIUS AND SABA</option>
+<option value="265">BOPHUTHATSWANA</option>
+<option value="29">BOSNIA AND HERZEGOVINA</option>
+<option value="30">BOTSWANA</option>
+<option value="31">BOUVET ISLAND</option>
+<option value="32">BRAZIL</option>
+<option value="266">BRITISH ANTARCTIC TERRITORY</option>
+<option value="303">British Citizen</option>
+<option value="304">British Dependent territories citizen</option>
+<option value="33">BRITISH INDIAN OCEAN TERRITORY</option>
+<option value="305">British National (Overseas)</option>
+<option value="306">British Overseas citizen</option>
+<option value="307">British Protected person</option>
+<option value="308">British Subject</option>
+<option value="34">BRUNEI DARUSSALAM</option>
+<option value="35">BULGARIA</option>
+<option value="36">BURKINA FASO</option>
+<option value="37">BURMA</option>
+<option value="38">BURUNDI</option>
+<option value="39">CAMBODIA</option>
+<option value="40">CAMEROON</option>
+<option value="41">CANADA</option>
+<option value="42">CANARY ISLANDS</option>
+<option value="267">CANTON AND ENDERBURY ISLANDS</option>
+<option value="43">CAPE VERDE</option>
+<option value="44">CAYMAN ISLANDS</option>
+<option value="45">CENTRAL AFRICAN REPUBLIC</option>
+<option value="46">CEUTA, MELILLA</option>
+<option value="47">CHAD</option>
+<option value="48">CHILE</option>
+<option selected="selected" value="49">CHINA</option>
+<option value="50">CHRISTMAS ISLAND</option>
+<option value="268">CISKEI</option>
+<option value="51">CLIPPERTON ISLAND</option>
+<option value="52">COCOS (KEELING) ISLANDS</option>
+<option value="53">COLOMBIA</option>
+<option value="54">COMOROS</option>
+<option value="55">CONGO</option>
+<option value="56">CONGO, THE DEMOCRATIC REPUBLIC OF THE</option>
+<option value="57">COOK ISLANDS</option>
+<option value="58">COSTA RICA</option>
+<option value="59">C&#212;TE D&#39;IVOIRE</option>
+<option value="60">CROATIA</option>
+<option value="61">CUBA</option>
+<option value="310">CURA&#199;AO</option>
+<option value="62">CYPRUS</option>
+<option value="63">CZECH REPUBLIC</option>
+<option value="269">CZECHOSLOVAKIA</option>
+<option value="270">DAHOMEY</option>
+<option value="64">DENMARK</option>
+<option value="323">Designates a resident of Kosovo to whom a travel document has been issued by the United Nations Interim Administration Mission in Kosovo (UNMIK)</option>
+<option value="322">Designates a specialized agency of the United Nations or one of its officials</option>
+<option value="324">Designates the Sovereign Military Order of Malta or one of its emissa</option>
+<option value="321">Designates the United Nations Organization or one of its officials</option>
+<option value="65">DIEGO GARCIA</option>
+<option value="66">DJIBOUTI</option>
+<option value="67">DOMINICA</option>
+<option value="68">DOMINICAN REPUBLIC</option>
+<option value="291">DRONNING MAUD LAND</option>
+<option value="69">EAST TIMOR</option>
+<option value="273">EAST TIMOR (TIMOR PORTUGUESE)</option>
+<option value="70">ECUADOR</option>
+<option value="71">EGYPT</option>
+<option value="72">EL SALVADOR</option>
+<option value="73">EQUATORIAL GUINEA</option>
+<option value="74">ERITREA</option>
+<option value="75">ESTONIA</option>
+<option value="76">ETHIOPIA</option>
+<option value="292">ETHIOPIA (BEFORE ERITREA BROKE AWAY)</option>
+<option value="77">FALKLAND ISLANDS (MALVINAS)</option>
+<option value="78">FAROE ISLANDS</option>
+<option value="79">FIJI</option>
+<option value="80">FINLAND</option>
+<option value="81">FRANCE</option>
+<option value="82">FRANCE, METROPOLITAN</option>
+<option value="83">FRENCH GUIANA</option>
+<option value="84">FRENCH POLYNESIA</option>
+<option value="274">FRENCH SOUTHERN AND ANTARCTIC TERRITORIES</option>
+<option value="85">FRENCH SOUTHERN TERRITORIES</option>
+<option value="275">FRENCH TERRITORY OF THE AFARS AND THE ISSAS</option>
+<option value="86">GABON</option>
+<option value="87">GAMBIA</option>
+<option value="88">GEORGIA</option>
+<option value="272">GERMAN DEMOCRATIC REPUBLIC</option>
+<option value="89">GERMANY</option>
+<option value="293">GERMANY, FEDERAL REPUBLIC OF (WEST GERMANY)</option>
+<option value="90">GHANA</option>
+<option value="91">GIBRALTAR</option>
+<option value="276">GILBERT AND ELLIS ISLANDS</option>
+<option value="92">GREECE</option>
+<option value="93">GREENLAND</option>
+<option value="94">GRENADA</option>
+<option value="95">GUADELOUPE</option>
+<option value="96">GUAM</option>
+<option value="97">GUATEMALA</option>
+<option value="98">GUERNSEY</option>
+<option value="99">GUINEA</option>
+<option value="100">GUINEA-BISSAU</option>
+<option value="101">GUYANA</option>
+<option value="102">HAITI</option>
+<option value="103">HEARD ISLAND AND MCDONALD ISLANDS</option>
+<option value="104">HOLY SEE (VATICAN CITY STATE)</option>
+<option value="105">HONDURAS</option>
+<option value="106">HONG KONG</option>
+<option value="107">HUNGARY</option>
+<option value="108">ICELAND</option>
+<option value="109">INDIA</option>
+<option value="110">INDONESIA</option>
+<option value="315">International Committee of the Red Cross </option>
+<option value="111">IRAN, ISLAMIC REPUBLIC OF</option>
+<option value="112">IRAQ</option>
+<option value="113">IRELAND</option>
+<option value="114">ISLE OF MAN</option>
+<option value="115">ISRAEL</option>
+<option value="116">ITALY</option>
+<option value="117">JAMAICA</option>
+<option value="118">JAPAN</option>
+<option value="119">JERSEY</option>
+<option value="277">JOHNSTON ISLAND</option>
+<option value="120">JORDAN</option>
+<option value="121">KAZAKHSTAN</option>
+<option value="122">KENYA</option>
+<option value="123">KIRIBATI</option>
+<option value="124">KOREA, DEMOCRATIC PEOPLE&#39;S REPUBLIC OF</option>
+<option value="125">KOREA, REPUBLIC OF</option>
+<option value="326">KOSOVO</option>
+<option value="126">KUWAIT</option>
+<option value="127">KYRGYZSTAN</option>
+<option value="128">LAO PEOPLE&#39;S DEMOCRATIC REPUBLIC</option>
+<option value="129">LATVIA</option>
+<option value="130">LEBANON</option>
+<option value="131">LESOTHO</option>
+<option value="132">LIBERIA</option>
+<option value="133">LIBYA FEZZAN</option>
+<option value="134">LIBYAN ARAB JAMAHIRIYA</option>
+<option value="135">LIECHTENSTEIN</option>
+<option value="136">LITHUANIA</option>
+<option value="137">LUXEMBOURG</option>
+<option value="138">MACAO</option>
+<option value="139">MACEDONIA, THE FORMER YUGOSLAV REPUBLIC OF</option>
+<option value="140">MADAGASCAR</option>
+<option value="141">MALAWI</option>
+<option value="142">MALAYSIA</option>
+<option value="143">MALDIVES</option>
+<option value="144">MALI</option>
+<option value="145">MALTA</option>
+<option value="146">MARSHALL ISLANDS</option>
+<option value="147">MARTINIQUE</option>
+<option value="148">MAURITANIA</option>
+<option value="149">MAURITIUS</option>
+<option value="150">MAYOTTE</option>
+<option value="151">MEXICO</option>
+<option value="152">MICRONESIA, FEDERATED STATES OF</option>
+<option value="278">MIDWAY ISLANDS</option>
+<option value="153">MOLDOVA, REPUBLIC OF</option>
+<option value="154">MONACO</option>
+<option value="155">MONGOLIA</option>
+<option value="156">MONTENEGRO</option>
+<option value="157">MONTSERRAT</option>
+<option value="158">MOROCCO</option>
+<option value="159">MOZAMBIQUE</option>
+<option value="160">MYANMAR</option>
+<option value="161">NAMIBIA</option>
+<option value="162">NAURU</option>
+<option value="163">NEPAL</option>
+<option value="164">NETHERLANDS</option>
+<option value="165">NETHERLANDS ANTILLES</option>
+<option value="294">NETHERLANDS ANTILLES (BEFORE ARUBA BROKE AWAY)</option>
+<option value="166">NEUTRAL ZONE</option>
+<option value="279">NEUTRAL ZONE BETWEEN SAUDI ARABIA (SA) AND IRAQ (IQ)</option>
+<option value="167">NEW CALEDONIA</option>
+<option value="280">NEW HEBRIDES</option>
+<option value="168">NEW ZEALAND</option>
+<option value="169">NICARAGUA</option>
+<option value="170">NIGER</option>
+<option value="171">NIGERIA</option>
+<option value="172">NIUE</option>
+<option value="173">NORFOLK ISLAND</option>
+<option value="174">NORTHERN MARIANA ISLANDS</option>
+<option value="175">NORWAY</option>
+<option value="9999">NOT APPLICABLE</option>
+<option value="176">OMAN</option>
+<option value="285">PACIFIC ISLANDS, TRUST TERRITORY OF THE</option>
+<option value="177">PAKISTAN</option>
+<option value="178">PALAU</option>
+<option value="319">Palestine</option>
+<option value="320">Palestinian nationality not recognized by all States</option>
+<option value="179">PALESTINIAN TERRITORY, OCCUPIED</option>
+<option value="180">PANAMA</option>
+<option value="295">PANAMA (BEFORE MERGING WITH PANAMA CANAL ZONE)</option>
+<option value="281">PANAMA CANAL ZONE</option>
+<option value="181">PAPUA NEW GUINEA</option>
+<option value="182">PARAGUAY</option>
+<option value="183">PERU</option>
+<option value="184">PHILIPPINES</option>
+<option value="185">PITCAIRN</option>
+<option value="186">POLAND</option>
+<option value="187">PORTUGAL</option>
+<option value="188">PUERTO RICO</option>
+<option value="189">QATAR</option>
+<option value="302">REFUGEE (OTHER)</option>
+<option value="301">REFUGEE (1951 CONVENTION)</option>
+<option value="286">RESIDENT OF KOSOVO (UNMIK)</option>
+<option value="190">R&#201;UNION</option>
+<option value="283">RHODESIA</option>
+<option value="191">ROMANIA</option>
+<option value="192">RUSSIAN FEDERATION</option>
+<option value="193">RWANDA</option>
+<option value="194">SAINT BARTH&#201;LEMY</option>
+<option value="195">SAINT HELENA, ASCENSION AND TRISTAN DA CUNHA</option>
+<option value="196">SAINT KITTS AND NEVIS</option>
+<option value="296">SAINT KITTS-NEVIS-ANGUILLA</option>
+<option value="197">SAINT LUCIA</option>
+<option value="198">SAINT MARTIN</option>
+<option value="312">SAINT MARTIN (FRENCH PART)</option>
+<option value="199">SAINT PIERRE AND MIQUELON</option>
+<option value="200">SAINT VINCENT</option>
+<option value="201">SAINT VINCENT AND THE GRENADINES</option>
+<option value="202">SAMOA</option>
+<option value="203">SAN MARINO</option>
+<option value="204">SAO TOME AND PRINCIPE</option>
+<option value="205">SAUDI ARABIA</option>
+<option value="206">SENEGAL</option>
+<option value="207">SERBIA</option>
+<option value="208">SERBIA AND MONTENEGRO</option>
+<option value="299">SERBIA AND MONTENEGRO (YUGOSLAVIA, FEDERAL REPUBLIC OF)</option>
+<option value="209">SEYCHELLES</option>
+<option value="210">SIERRA LEONE</option>
+<option value="284">SIKKIM</option>
+<option value="211">SINGAPORE</option>
+<option value="311">SINT MAARTEN (DUTCH PART)</option>
+<option value="212">SLOVAKIA</option>
+<option value="213">SLOVENIA</option>
+<option value="214">SOLOMON ISLANDS</option>
+<option value="215">SOMALIA</option>
+<option value="216">SOUTH AFRICA</option>
+<option value="217">SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS</option>
+<option value="325">SOUTH SUDAN</option>
+<option value="317">Soviet Union</option>
+<option value="218">SPAIN</option>
+<option value="219">SRI LANKA</option>
+<option value="264">STATELESS (1954 CONVENTION)</option>
+<option value="220">SUDAN</option>
+<option value="221">SURINAME</option>
+<option value="222">SVALBARD AND JAN MAYEN</option>
+<option value="223">SWAZILAND</option>
+<option value="224">SWEDEN</option>
+<option value="225">SWITZERLAND</option>
+<option value="226">SYRIAN ARAB REPUBLIC</option>
+<option value="227">TAIWAN, PROVINCE OF CHINA</option>
+<option value="228">TAJIKISTAN</option>
+<option value="229">TANZANIA, UNITED REPUBLIC OF</option>
+<option value="230">THAILAND</option>
+<option value="314">Tibet</option>
+<option value="231">TIMOR-LESTE</option>
+<option value="232">TOGO</option>
+<option value="233">TOKELAU</option>
+<option value="234">TONGA</option>
+<option value="235">TRINIDAD AND TOBAGO</option>
+<option value="236">TRISTAN DA CUNHA</option>
+<option value="237">TUNISIA</option>
+<option value="238">TURKEY</option>
+<option value="239">TURKMENISTAN</option>
+<option value="240">TURKS AND CAICOS ISLANDS</option>
+<option value="241">TUVALU</option>
+<option value="242">UGANDA</option>
+<option value="243">UKRAINE</option>
+<option value="316">UNHCR</option>
+<option value="244">UNITED ARAB EMIRATES</option>
+<option value="245">UNITED KINGDOM</option>
+<option value="313">United Nations (UN)</option>
+<option value="246">UNITED STATES</option>
+<option value="247">UNITED STATES MINOR OUTLYING ISLANDS</option>
+<option value="263">UNKNOWN</option>
+<option value="282">UNSPECIFIED</option>
+<option value="288">UPPER VOLTA (HAUTE-VOLTA)</option>
+<option value="248">URUGUAY</option>
+<option value="287">U.S. MISCELLANEOUS PACIFIC ISLANDS</option>
+<option value="249">USSR</option>
+<option value="250">UZBEKISTAN</option>
+<option value="251">VANUATU</option>
+<option value="289">VENDA</option>
+<option value="252">VENEZUELA, BOLIVARIAN REPUBLIC OF</option>
+<option value="271">VIET-NAM, DEMOCRATIC REPUBLIC OF (NORTH VIETNAM)</option>
+<option value="300">VIET-NAM, REPUBLIC OF (SOUTH VIETNAM)</option>
+<option value="253">VIET-NAM, SOCIALIST REPUBLIC OF</option>
+<option value="254">VIRGIN ISLANDS, BRITISH</option>
+<option value="255">VIRGIN ISLANDS, U.S.</option>
+<option value="290">WAKE ISLAND</option>
+<option value="256">WALLIS AND FUTUNA</option>
+<option value="257">WESTERN SAHARA</option>
+<option value="258">YEMEN</option>
+<option value="298">YEMEN ARAB REPUBLIC (NORTH YEMEN)</option>
+<option value="297">YEMEN, DEMOCRATIC (SOUTH YEMEN)</option>
+<option value="259">YUGOSLAVIA</option>
+<option value="260">ZAIRE</option>
+<option value="261">ZAMBIA</option>
+<option value="262">ZIMBABWE</option>
+</select>
+    </td>
+    </tr>
+    <tr>
+    <td align="right">
+        <span class="field-validation-valid" data-valmsg-for="PlaceOfBirth" data-valmsg-replace="false">!</span> 出生地点<div class="mandatory-indicator">&nbsp;*</div>
+    </td>
+    <td>
+        <input class="text-edit" id="PlaceOfBirth" name="PlaceOfBirth" type="text" value="Shandong" />
+    </td>
+    </tr>
+    <tr>
+    <td align="right">
+        <span class="field-validation-valid" data-valmsg-for="NationalityForApplication" data-valmsg-replace="false">!</span> 现在的国籍<div class="mandatory-indicator">&nbsp;*</div>
+    </td>
+    <td>
+         <select class="dropdown-edit" data-val="true" data-val-number="The field NationalityForApplication must be a number." id="NationalityForApplication" name="NationalityForApplication"><option value="0">请选择</option>
+<option value="1">AFGHANISTAN</option>
+<option value="2">&#197;LAND ISLANDS</option>
+<option value="3">ALBANIA</option>
+<option value="4">ALGERIA</option>
+<option value="5">AMERICAN SAMOA</option>
+<option value="6">ANDORRA</option>
+<option value="7">ANGOLA</option>
+<option value="8">ANGUILLA</option>
+<option value="9">ANTARCTICA</option>
+<option value="10">ANTIGUA AND BARBUDA</option>
+<option value="11">ARGENTINA</option>
+<option value="12">ARMENIA</option>
+<option value="13">ARUBA</option>
+<option value="14">ASCENSION ISLAND</option>
+<option value="15">AUSTRALIA</option>
+<option value="16">AUSTRIA</option>
+<option value="17">AZERBAIJAN</option>
+<option value="18">BAHAMAS</option>
+<option value="19">BAHRAIN</option>
+<option value="20">BANGLADESH</option>
+<option value="21">BARBADOS</option>
+<option value="22">BELARUS</option>
+<option value="318">Belarus SSR</option>
+<option value="23">BELGIUM</option>
+<option value="24">BELIZE</option>
+<option value="25">BENIN</option>
+<option value="26">BERMUDA</option>
+<option value="27">BHUTAN</option>
+<option value="28">BOLIVIA, PLURINATIONAL STATE OF</option>
+<option value="309">BONAIRE, SAINT EUSTATIUS AND SABA</option>
+<option value="265">BOPHUTHATSWANA</option>
+<option value="29">BOSNIA AND HERZEGOVINA</option>
+<option value="30">BOTSWANA</option>
+<option value="31">BOUVET ISLAND</option>
+<option value="32">BRAZIL</option>
+<option value="266">BRITISH ANTARCTIC TERRITORY</option>
+<option value="303">British Citizen</option>
+<option value="304">British Dependent territories citizen</option>
+<option value="33">BRITISH INDIAN OCEAN TERRITORY</option>
+<option value="305">British National (Overseas)</option>
+<option value="306">British Overseas citizen</option>
+<option value="307">British Protected person</option>
+<option value="308">British Subject</option>
+<option value="34">BRUNEI DARUSSALAM</option>
+<option value="35">BULGARIA</option>
+<option value="36">BURKINA FASO</option>
+<option value="37">BURMA</option>
+<option value="38">BURUNDI</option>
+<option value="39">CAMBODIA</option>
+<option value="40">CAMEROON</option>
+<option value="41">CANADA</option>
+<option value="42">CANARY ISLANDS</option>
+<option value="267">CANTON AND ENDERBURY ISLANDS</option>
+<option value="43">CAPE VERDE</option>
+<option value="44">CAYMAN ISLANDS</option>
+<option value="45">CENTRAL AFRICAN REPUBLIC</option>
+<option value="46">CEUTA, MELILLA</option>
+<option value="47">CHAD</option>
+<option value="48">CHILE</option>
+<option selected="selected" value="49">CHINA</option>
+<option value="50">CHRISTMAS ISLAND</option>
+<option value="268">CISKEI</option>
+<option value="51">CLIPPERTON ISLAND</option>
+<option value="52">COCOS (KEELING) ISLANDS</option>
+<option value="53">COLOMBIA</option>
+<option value="54">COMOROS</option>
+<option value="55">CONGO</option>
+<option value="56">CONGO, THE DEMOCRATIC REPUBLIC OF THE</option>
+<option value="57">COOK ISLANDS</option>
+<option value="58">COSTA RICA</option>
+<option value="59">C&#212;TE D&#39;IVOIRE</option>
+<option value="60">CROATIA</option>
+<option value="61">CUBA</option>
+<option value="310">CURA&#199;AO</option>
+<option value="62">CYPRUS</option>
+<option value="63">CZECH REPUBLIC</option>
+<option value="269">CZECHOSLOVAKIA</option>
+<option value="270">DAHOMEY</option>
+<option value="64">DENMARK</option>
+<option value="323">Designates a resident of Kosovo to whom a travel document has been issued by the United Nations Interim Administration Mission in Kosovo (UNMIK)</option>
+<option value="322">Designates a specialized agency of the United Nations or one of its officials</option>
+<option value="324">Designates the Sovereign Military Order of Malta or one of its emissa</option>
+<option value="321">Designates the United Nations Organization or one of its officials</option>
+<option value="65">DIEGO GARCIA</option>
+<option value="66">DJIBOUTI</option>
+<option value="67">DOMINICA</option>
+<option value="68">DOMINICAN REPUBLIC</option>
+<option value="291">DRONNING MAUD LAND</option>
+<option value="69">EAST TIMOR</option>
+<option value="273">EAST TIMOR (TIMOR PORTUGUESE)</option>
+<option value="70">ECUADOR</option>
+<option value="71">EGYPT</option>
+<option value="72">EL SALVADOR</option>
+<option value="73">EQUATORIAL GUINEA</option>
+<option value="74">ERITREA</option>
+<option value="75">ESTONIA</option>
+<option value="76">ETHIOPIA</option>
+<option value="292">ETHIOPIA (BEFORE ERITREA BROKE AWAY)</option>
+<option value="77">FALKLAND ISLANDS (MALVINAS)</option>
+<option value="78">FAROE ISLANDS</option>
+<option value="79">FIJI</option>
+<option value="80">FINLAND</option>
+<option value="81">FRANCE</option>
+<option value="82">FRANCE, METROPOLITAN</option>
+<option value="83">FRENCH GUIANA</option>
+<option value="84">FRENCH POLYNESIA</option>
+<option value="274">FRENCH SOUTHERN AND ANTARCTIC TERRITORIES</option>
+<option value="85">FRENCH SOUTHERN TERRITORIES</option>
+<option value="275">FRENCH TERRITORY OF THE AFARS AND THE ISSAS</option>
+<option value="86">GABON</option>
+<option value="87">GAMBIA</option>
+<option value="88">GEORGIA</option>
+<option value="272">GERMAN DEMOCRATIC REPUBLIC</option>
+<option value="89">GERMANY</option>
+<option value="293">GERMANY, FEDERAL REPUBLIC OF (WEST GERMANY)</option>
+<option value="90">GHANA</option>
+<option value="91">GIBRALTAR</option>
+<option value="276">GILBERT AND ELLIS ISLANDS</option>
+<option value="92">GREECE</option>
+<option value="93">GREENLAND</option>
+<option value="94">GRENADA</option>
+<option value="95">GUADELOUPE</option>
+<option value="96">GUAM</option>
+<option value="97">GUATEMALA</option>
+<option value="98">GUERNSEY</option>
+<option value="99">GUINEA</option>
+<option value="100">GUINEA-BISSAU</option>
+<option value="101">GUYANA</option>
+<option value="102">HAITI</option>
+<option value="103">HEARD ISLAND AND MCDONALD ISLANDS</option>
+<option value="104">HOLY SEE (VATICAN CITY STATE)</option>
+<option value="105">HONDURAS</option>
+<option value="106">HONG KONG</option>
+<option value="107">HUNGARY</option>
+<option value="108">ICELAND</option>
+<option value="109">INDIA</option>
+<option value="110">INDONESIA</option>
+<option value="315">International Committee of the Red Cross </option>
+<option value="111">IRAN, ISLAMIC REPUBLIC OF</option>
+<option value="112">IRAQ</option>
+<option value="113">IRELAND</option>
+<option value="114">ISLE OF MAN</option>
+<option value="115">ISRAEL</option>
+<option value="116">ITALY</option>
+<option value="117">JAMAICA</option>
+<option value="118">JAPAN</option>
+<option value="119">JERSEY</option>
+<option value="277">JOHNSTON ISLAND</option>
+<option value="120">JORDAN</option>
+<option value="121">KAZAKHSTAN</option>
+<option value="122">KENYA</option>
+<option value="123">KIRIBATI</option>
+<option value="124">KOREA, DEMOCRATIC PEOPLE&#39;S REPUBLIC OF</option>
+<option value="125">KOREA, REPUBLIC OF</option>
+<option value="326">KOSOVO</option>
+<option value="126">KUWAIT</option>
+<option value="127">KYRGYZSTAN</option>
+<option value="128">LAO PEOPLE&#39;S DEMOCRATIC REPUBLIC</option>
+<option value="129">LATVIA</option>
+<option value="130">LEBANON</option>
+<option value="131">LESOTHO</option>
+<option value="132">LIBERIA</option>
+<option value="133">LIBYA FEZZAN</option>
+<option value="134">LIBYAN ARAB JAMAHIRIYA</option>
+<option value="135">LIECHTENSTEIN</option>
+<option value="136">LITHUANIA</option>
+<option value="137">LUXEMBOURG</option>
+<option value="138">MACAO</option>
+<option value="139">MACEDONIA, THE FORMER YUGOSLAV REPUBLIC OF</option>
+<option value="140">MADAGASCAR</option>
+<option value="141">MALAWI</option>
+<option value="142">MALAYSIA</option>
+<option value="143">MALDIVES</option>
+<option value="144">MALI</option>
+<option value="145">MALTA</option>
+<option value="146">MARSHALL ISLANDS</option>
+<option value="147">MARTINIQUE</option>
+<option value="148">MAURITANIA</option>
+<option value="149">MAURITIUS</option>
+<option value="150">MAYOTTE</option>
+<option value="151">MEXICO</option>
+<option value="152">MICRONESIA, FEDERATED STATES OF</option>
+<option value="278">MIDWAY ISLANDS</option>
+<option value="153">MOLDOVA, REPUBLIC OF</option>
+<option value="154">MONACO</option>
+<option value="155">MONGOLIA</option>
+<option value="156">MONTENEGRO</option>
+<option value="157">MONTSERRAT</option>
+<option value="158">MOROCCO</option>
+<option value="159">MOZAMBIQUE</option>
+<option value="160">MYANMAR</option>
+<option value="161">NAMIBIA</option>
+<option value="162">NAURU</option>
+<option value="163">NEPAL</option>
+<option value="164">NETHERLANDS</option>
+<option value="165">NETHERLANDS ANTILLES</option>
+<option value="294">NETHERLANDS ANTILLES (BEFORE ARUBA BROKE AWAY)</option>
+<option value="166">NEUTRAL ZONE</option>
+<option value="279">NEUTRAL ZONE BETWEEN SAUDI ARABIA (SA) AND IRAQ (IQ)</option>
+<option value="167">NEW CALEDONIA</option>
+<option value="280">NEW HEBRIDES</option>
+<option value="168">NEW ZEALAND</option>
+<option value="169">NICARAGUA</option>
+<option value="170">NIGER</option>
+<option value="171">NIGERIA</option>
+<option value="172">NIUE</option>
+<option value="173">NORFOLK ISLAND</option>
+<option value="174">NORTHERN MARIANA ISLANDS</option>
+<option value="175">NORWAY</option>
+<option value="9999">NOT APPLICABLE</option>
+<option value="176">OMAN</option>
+<option value="285">PACIFIC ISLANDS, TRUST TERRITORY OF THE</option>
+<option value="177">PAKISTAN</option>
+<option value="178">PALAU</option>
+<option value="319">Palestine</option>
+<option value="320">Palestinian nationality not recognized by all States</option>
+<option value="179">PALESTINIAN TERRITORY, OCCUPIED</option>
+<option value="180">PANAMA</option>
+<option value="295">PANAMA (BEFORE MERGING WITH PANAMA CANAL ZONE)</option>
+<option value="281">PANAMA CANAL ZONE</option>
+<option value="181">PAPUA NEW GUINEA</option>
+<option value="182">PARAGUAY</option>
+<option value="183">PERU</option>
+<option value="184">PHILIPPINES</option>
+<option value="185">PITCAIRN</option>
+<option value="186">POLAND</option>
+<option value="187">PORTUGAL</option>
+<option value="188">PUERTO RICO</option>
+<option value="189">QATAR</option>
+<option value="302">REFUGEE (OTHER)</option>
+<option value="301">REFUGEE (1951 CONVENTION)</option>
+<option value="286">RESIDENT OF KOSOVO (UNMIK)</option>
+<option value="190">R&#201;UNION</option>
+<option value="283">RHODESIA</option>
+<option value="191">ROMANIA</option>
+<option value="192">RUSSIAN FEDERATION</option>
+<option value="193">RWANDA</option>
+<option value="194">SAINT BARTH&#201;LEMY</option>
+<option value="195">SAINT HELENA, ASCENSION AND TRISTAN DA CUNHA</option>
+<option value="196">SAINT KITTS AND NEVIS</option>
+<option value="296">SAINT KITTS-NEVIS-ANGUILLA</option>
+<option value="197">SAINT LUCIA</option>
+<option value="198">SAINT MARTIN</option>
+<option value="312">SAINT MARTIN (FRENCH PART)</option>
+<option value="199">SAINT PIERRE AND MIQUELON</option>
+<option value="200">SAINT VINCENT</option>
+<option value="201">SAINT VINCENT AND THE GRENADINES</option>
+<option value="202">SAMOA</option>
+<option value="203">SAN MARINO</option>
+<option value="204">SAO TOME AND PRINCIPE</option>
+<option value="205">SAUDI ARABIA</option>
+<option value="206">SENEGAL</option>
+<option value="207">SERBIA</option>
+<option value="208">SERBIA AND MONTENEGRO</option>
+<option value="299">SERBIA AND MONTENEGRO (YUGOSLAVIA, FEDERAL REPUBLIC OF)</option>
+<option value="209">SEYCHELLES</option>
+<option value="210">SIERRA LEONE</option>
+<option value="284">SIKKIM</option>
+<option value="211">SINGAPORE</option>
+<option value="311">SINT MAARTEN (DUTCH PART)</option>
+<option value="212">SLOVAKIA</option>
+<option value="213">SLOVENIA</option>
+<option value="214">SOLOMON ISLANDS</option>
+<option value="215">SOMALIA</option>
+<option value="216">SOUTH AFRICA</option>
+<option value="217">SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS</option>
+<option value="325">SOUTH SUDAN</option>
+<option value="317">Soviet Union</option>
+<option value="218">SPAIN</option>
+<option value="219">SRI LANKA</option>
+<option value="264">STATELESS (1954 CONVENTION)</option>
+<option value="220">SUDAN</option>
+<option value="221">SURINAME</option>
+<option value="222">SVALBARD AND JAN MAYEN</option>
+<option value="223">SWAZILAND</option>
+<option value="224">SWEDEN</option>
+<option value="225">SWITZERLAND</option>
+<option value="226">SYRIAN ARAB REPUBLIC</option>
+<option value="227">TAIWAN, PROVINCE OF CHINA</option>
+<option value="228">TAJIKISTAN</option>
+<option value="229">TANZANIA, UNITED REPUBLIC OF</option>
+<option value="230">THAILAND</option>
+<option value="314">Tibet</option>
+<option value="231">TIMOR-LESTE</option>
+<option value="232">TOGO</option>
+<option value="233">TOKELAU</option>
+<option value="234">TONGA</option>
+<option value="235">TRINIDAD AND TOBAGO</option>
+<option value="236">TRISTAN DA CUNHA</option>
+<option value="237">TUNISIA</option>
+<option value="238">TURKEY</option>
+<option value="239">TURKMENISTAN</option>
+<option value="240">TURKS AND CAICOS ISLANDS</option>
+<option value="241">TUVALU</option>
+<option value="242">UGANDA</option>
+<option value="243">UKRAINE</option>
+<option value="316">UNHCR</option>
+<option value="244">UNITED ARAB EMIRATES</option>
+<option value="245">UNITED KINGDOM</option>
+<option value="313">United Nations (UN)</option>
+<option value="246">UNITED STATES</option>
+<option value="247">UNITED STATES MINOR OUTLYING ISLANDS</option>
+<option value="263">UNKNOWN</option>
+<option value="282">UNSPECIFIED</option>
+<option value="288">UPPER VOLTA (HAUTE-VOLTA)</option>
+<option value="248">URUGUAY</option>
+<option value="287">U.S. MISCELLANEOUS PACIFIC ISLANDS</option>
+<option value="249">USSR</option>
+<option value="250">UZBEKISTAN</option>
+<option value="251">VANUATU</option>
+<option value="289">VENDA</option>
+<option value="252">VENEZUELA, BOLIVARIAN REPUBLIC OF</option>
+<option value="271">VIET-NAM, DEMOCRATIC REPUBLIC OF (NORTH VIETNAM)</option>
+<option value="300">VIET-NAM, REPUBLIC OF (SOUTH VIETNAM)</option>
+<option value="253">VIET-NAM, SOCIALIST REPUBLIC OF</option>
+<option value="254">VIRGIN ISLANDS, BRITISH</option>
+<option value="255">VIRGIN ISLANDS, U.S.</option>
+<option value="290">WAKE ISLAND</option>
+<option value="256">WALLIS AND FUTUNA</option>
+<option value="257">WESTERN SAHARA</option>
+<option value="258">YEMEN</option>
+<option value="298">YEMEN ARAB REPUBLIC (NORTH YEMEN)</option>
+<option value="297">YEMEN, DEMOCRATIC (SOUTH YEMEN)</option>
+<option value="259">YUGOSLAVIA</option>
+<option value="260">ZAIRE</option>
+<option value="261">ZAMBIA</option>
+<option value="262">ZIMBABWE</option>
+</select>
+    </td>
+    </tr>
+    <tr>
+    <td align="right">
+        <span class="field-validation-valid" data-valmsg-for="TraveldocumentDateOfIssue" data-valmsg-replace="false">!</span> 护照签发时间 tt.mm.jjjj按此格式填写日期<div class="mandatory-indicator">&nbsp;*</div>
+    </td>
+    <td>
+        
+<input class="date-picker" id="TraveldocumentDateOfIssue" name="TraveldocumentDateOfIssue" type="text" value="15.10.2018" />
+
+		&nbsp;(如 15/3/2016)
+    </td>
+    </tr>
+    <tr>
+    <td align="right">
+        <span class="field-validation-valid" data-valmsg-for="TraveldocumentValidUntil" data-valmsg-replace="false">!</span> 护照有效期 tt.mm.jjjj按此格式填写日期<div class="mandatory-indicator">&nbsp;*</div>
+    </td>
+    <td>
+        
+<input class="date-picker" id="TraveldocumentValidUntil" name="TraveldocumentValidUntil" type="text" value="14.10.2023" />
+
+		&nbsp;(如 15/3/2016)
+    </td>
+    </tr>
+    <tr>
+    <td align="right">
+        <span class="field-validation-valid" data-valmsg-for="TraveldocumentIssuingAuthority" data-valmsg-replace="false">!</span> 护照签发机关<div class="mandatory-indicator">&nbsp;*</div>
+    </td>
+    <td>
+         <select class="dropdown-edit" data-val="true" data-val-number="The field TraveldocumentIssuingAuthority must be a number." id="TraveldocumentIssuingAuthority" name="TraveldocumentIssuingAuthority"><option value="0">请选择</option>
+<option value="1">AFGHANISTAN</option>
+<option value="2">&#197;LAND ISLANDS</option>
+<option value="3">ALBANIA</option>
+<option value="4">ALGERIA</option>
+<option value="5">AMERICAN SAMOA</option>
+<option value="6">ANDORRA</option>
+<option value="7">ANGOLA</option>
+<option value="8">ANGUILLA</option>
+<option value="9">ANTARCTICA</option>
+<option value="10">ANTIGUA AND BARBUDA</option>
+<option value="11">ARGENTINA</option>
+<option value="12">ARMENIA</option>
+<option value="13">ARUBA</option>
+<option value="14">ASCENSION ISLAND</option>
+<option value="15">AUSTRALIA</option>
+<option value="16">AUSTRIA</option>
+<option value="17">AZERBAIJAN</option>
+<option value="18">BAHAMAS</option>
+<option value="19">BAHRAIN</option>
+<option value="20">BANGLADESH</option>
+<option value="21">BARBADOS</option>
+<option value="22">BELARUS</option>
+<option value="318">Belarus SSR</option>
+<option value="23">BELGIUM</option>
+<option value="24">BELIZE</option>
+<option value="25">BENIN</option>
+<option value="26">BERMUDA</option>
+<option value="27">BHUTAN</option>
+<option value="28">BOLIVIA, PLURINATIONAL STATE OF</option>
+<option value="309">BONAIRE, SAINT EUSTATIUS AND SABA</option>
+<option value="265">BOPHUTHATSWANA</option>
+<option value="29">BOSNIA AND HERZEGOVINA</option>
+<option value="30">BOTSWANA</option>
+<option value="31">BOUVET ISLAND</option>
+<option value="32">BRAZIL</option>
+<option value="266">BRITISH ANTARCTIC TERRITORY</option>
+<option value="303">British Citizen</option>
+<option value="304">British Dependent territories citizen</option>
+<option value="33">BRITISH INDIAN OCEAN TERRITORY</option>
+<option value="305">British National (Overseas)</option>
+<option value="306">British Overseas citizen</option>
+<option value="307">British Protected person</option>
+<option value="308">British Subject</option>
+<option value="34">BRUNEI DARUSSALAM</option>
+<option value="35">BULGARIA</option>
+<option value="36">BURKINA FASO</option>
+<option value="37">BURMA</option>
+<option value="38">BURUNDI</option>
+<option value="39">CAMBODIA</option>
+<option value="40">CAMEROON</option>
+<option value="41">CANADA</option>
+<option value="42">CANARY ISLANDS</option>
+<option value="267">CANTON AND ENDERBURY ISLANDS</option>
+<option value="43">CAPE VERDE</option>
+<option value="44">CAYMAN ISLANDS</option>
+<option value="45">CENTRAL AFRICAN REPUBLIC</option>
+<option value="46">CEUTA, MELILLA</option>
+<option value="47">CHAD</option>
+<option value="48">CHILE</option>
+<option selected="selected" value="49">CHINA</option>
+<option value="50">CHRISTMAS ISLAND</option>
+<option value="268">CISKEI</option>
+<option value="51">CLIPPERTON ISLAND</option>
+<option value="52">COCOS (KEELING) ISLANDS</option>
+<option value="53">COLOMBIA</option>
+<option value="54">COMOROS</option>
+<option value="55">CONGO</option>
+<option value="56">CONGO, THE DEMOCRATIC REPUBLIC OF THE</option>
+<option value="57">COOK ISLANDS</option>
+<option value="58">COSTA RICA</option>
+<option value="59">C&#212;TE D&#39;IVOIRE</option>
+<option value="60">CROATIA</option>
+<option value="61">CUBA</option>
+<option value="310">CURA&#199;AO</option>
+<option value="62">CYPRUS</option>
+<option value="63">CZECH REPUBLIC</option>
+<option value="269">CZECHOSLOVAKIA</option>
+<option value="270">DAHOMEY</option>
+<option value="64">DENMARK</option>
+<option value="323">Designates a resident of Kosovo to whom a travel document has been issued by the United Nations Interim Administration Mission in Kosovo (UNMIK)</option>
+<option value="322">Designates a specialized agency of the United Nations or one of its officials</option>
+<option value="324">Designates the Sovereign Military Order of Malta or one of its emissa</option>
+<option value="321">Designates the United Nations Organization or one of its officials</option>
+<option value="65">DIEGO GARCIA</option>
+<option value="66">DJIBOUTI</option>
+<option value="67">DOMINICA</option>
+<option value="68">DOMINICAN REPUBLIC</option>
+<option value="291">DRONNING MAUD LAND</option>
+<option value="69">EAST TIMOR</option>
+<option value="273">EAST TIMOR (TIMOR PORTUGUESE)</option>
+<option value="70">ECUADOR</option>
+<option value="71">EGYPT</option>
+<option value="72">EL SALVADOR</option>
+<option value="73">EQUATORIAL GUINEA</option>
+<option value="74">ERITREA</option>
+<option value="75">ESTONIA</option>
+<option value="76">ETHIOPIA</option>
+<option value="292">ETHIOPIA (BEFORE ERITREA BROKE AWAY)</option>
+<option value="77">FALKLAND ISLANDS (MALVINAS)</option>
+<option value="78">FAROE ISLANDS</option>
+<option value="79">FIJI</option>
+<option value="80">FINLAND</option>
+<option value="81">FRANCE</option>
+<option value="82">FRANCE, METROPOLITAN</option>
+<option value="83">FRENCH GUIANA</option>
+<option value="84">FRENCH POLYNESIA</option>
+<option value="274">FRENCH SOUTHERN AND ANTARCTIC TERRITORIES</option>
+<option value="85">FRENCH SOUTHERN TERRITORIES</option>
+<option value="275">FRENCH TERRITORY OF THE AFARS AND THE ISSAS</option>
+<option value="86">GABON</option>
+<option value="87">GAMBIA</option>
+<option value="88">GEORGIA</option>
+<option value="272">GERMAN DEMOCRATIC REPUBLIC</option>
+<option value="89">GERMANY</option>
+<option value="293">GERMANY, FEDERAL REPUBLIC OF (WEST GERMANY)</option>
+<option value="90">GHANA</option>
+<option value="91">GIBRALTAR</option>
+<option value="276">GILBERT AND ELLIS ISLANDS</option>
+<option value="92">GREECE</option>
+<option value="93">GREENLAND</option>
+<option value="94">GRENADA</option>
+<option value="95">GUADELOUPE</option>
+<option value="96">GUAM</option>
+<option value="97">GUATEMALA</option>
+<option value="98">GUERNSEY</option>
+<option value="99">GUINEA</option>
+<option value="100">GUINEA-BISSAU</option>
+<option value="101">GUYANA</option>
+<option value="102">HAITI</option>
+<option value="103">HEARD ISLAND AND MCDONALD ISLANDS</option>
+<option value="104">HOLY SEE (VATICAN CITY STATE)</option>
+<option value="105">HONDURAS</option>
+<option value="106">HONG KONG</option>
+<option value="107">HUNGARY</option>
+<option value="108">ICELAND</option>
+<option value="109">INDIA</option>
+<option value="110">INDONESIA</option>
+<option value="315">International Committee of the Red Cross </option>
+<option value="111">IRAN, ISLAMIC REPUBLIC OF</option>
+<option value="112">IRAQ</option>
+<option value="113">IRELAND</option>
+<option value="114">ISLE OF MAN</option>
+<option value="115">ISRAEL</option>
+<option value="116">ITALY</option>
+<option value="117">JAMAICA</option>
+<option value="118">JAPAN</option>
+<option value="119">JERSEY</option>
+<option value="277">JOHNSTON ISLAND</option>
+<option value="120">JORDAN</option>
+<option value="121">KAZAKHSTAN</option>
+<option value="122">KENYA</option>
+<option value="123">KIRIBATI</option>
+<option value="124">KOREA, DEMOCRATIC PEOPLE&#39;S REPUBLIC OF</option>
+<option value="125">KOREA, REPUBLIC OF</option>
+<option value="326">KOSOVO</option>
+<option value="126">KUWAIT</option>
+<option value="127">KYRGYZSTAN</option>
+<option value="128">LAO PEOPLE&#39;S DEMOCRATIC REPUBLIC</option>
+<option value="129">LATVIA</option>
+<option value="130">LEBANON</option>
+<option value="131">LESOTHO</option>
+<option value="132">LIBERIA</option>
+<option value="133">LIBYA FEZZAN</option>
+<option value="134">LIBYAN ARAB JAMAHIRIYA</option>
+<option value="135">LIECHTENSTEIN</option>
+<option value="136">LITHUANIA</option>
+<option value="137">LUXEMBOURG</option>
+<option value="138">MACAO</option>
+<option value="139">MACEDONIA, THE FORMER YUGOSLAV REPUBLIC OF</option>
+<option value="140">MADAGASCAR</option>
+<option value="141">MALAWI</option>
+<option value="142">MALAYSIA</option>
+<option value="143">MALDIVES</option>
+<option value="144">MALI</option>
+<option value="145">MALTA</option>
+<option value="146">MARSHALL ISLANDS</option>
+<option value="147">MARTINIQUE</option>
+<option value="148">MAURITANIA</option>
+<option value="149">MAURITIUS</option>
+<option value="150">MAYOTTE</option>
+<option value="151">MEXICO</option>
+<option value="152">MICRONESIA, FEDERATED STATES OF</option>
+<option value="278">MIDWAY ISLANDS</option>
+<option value="153">MOLDOVA, REPUBLIC OF</option>
+<option value="154">MONACO</option>
+<option value="155">MONGOLIA</option>
+<option value="156">MONTENEGRO</option>
+<option value="157">MONTSERRAT</option>
+<option value="158">MOROCCO</option>
+<option value="159">MOZAMBIQUE</option>
+<option value="160">MYANMAR</option>
+<option value="161">NAMIBIA</option>
+<option value="162">NAURU</option>
+<option value="163">NEPAL</option>
+<option value="164">NETHERLANDS</option>
+<option value="165">NETHERLANDS ANTILLES</option>
+<option value="294">NETHERLANDS ANTILLES (BEFORE ARUBA BROKE AWAY)</option>
+<option value="166">NEUTRAL ZONE</option>
+<option value="279">NEUTRAL ZONE BETWEEN SAUDI ARABIA (SA) AND IRAQ (IQ)</option>
+<option value="167">NEW CALEDONIA</option>
+<option value="280">NEW HEBRIDES</option>
+<option value="168">NEW ZEALAND</option>
+<option value="169">NICARAGUA</option>
+<option value="170">NIGER</option>
+<option value="171">NIGERIA</option>
+<option value="172">NIUE</option>
+<option value="173">NORFOLK ISLAND</option>
+<option value="174">NORTHERN MARIANA ISLANDS</option>
+<option value="175">NORWAY</option>
+<option value="9999">NOT APPLICABLE</option>
+<option value="176">OMAN</option>
+<option value="285">PACIFIC ISLANDS, TRUST TERRITORY OF THE</option>
+<option value="177">PAKISTAN</option>
+<option value="178">PALAU</option>
+<option value="319">Palestine</option>
+<option value="320">Palestinian nationality not recognized by all States</option>
+<option value="179">PALESTINIAN TERRITORY, OCCUPIED</option>
+<option value="180">PANAMA</option>
+<option value="295">PANAMA (BEFORE MERGING WITH PANAMA CANAL ZONE)</option>
+<option value="281">PANAMA CANAL ZONE</option>
+<option value="181">PAPUA NEW GUINEA</option>
+<option value="182">PARAGUAY</option>
+<option value="183">PERU</option>
+<option value="184">PHILIPPINES</option>
+<option value="185">PITCAIRN</option>
+<option value="186">POLAND</option>
+<option value="187">PORTUGAL</option>
+<option value="188">PUERTO RICO</option>
+<option value="189">QATAR</option>
+<option value="302">REFUGEE (OTHER)</option>
+<option value="301">REFUGEE (1951 CONVENTION)</option>
+<option value="286">RESIDENT OF KOSOVO (UNMIK)</option>
+<option value="190">R&#201;UNION</option>
+<option value="283">RHODESIA</option>
+<option value="191">ROMANIA</option>
+<option value="192">RUSSIAN FEDERATION</option>
+<option value="193">RWANDA</option>
+<option value="194">SAINT BARTH&#201;LEMY</option>
+<option value="195">SAINT HELENA, ASCENSION AND TRISTAN DA CUNHA</option>
+<option value="196">SAINT KITTS AND NEVIS</option>
+<option value="296">SAINT KITTS-NEVIS-ANGUILLA</option>
+<option value="197">SAINT LUCIA</option>
+<option value="198">SAINT MARTIN</option>
+<option value="312">SAINT MARTIN (FRENCH PART)</option>
+<option value="199">SAINT PIERRE AND MIQUELON</option>
+<option value="200">SAINT VINCENT</option>
+<option value="201">SAINT VINCENT AND THE GRENADINES</option>
+<option value="202">SAMOA</option>
+<option value="203">SAN MARINO</option>
+<option value="204">SAO TOME AND PRINCIPE</option>
+<option value="205">SAUDI ARABIA</option>
+<option value="206">SENEGAL</option>
+<option value="207">SERBIA</option>
+<option value="208">SERBIA AND MONTENEGRO</option>
+<option value="299">SERBIA AND MONTENEGRO (YUGOSLAVIA, FEDERAL REPUBLIC OF)</option>
+<option value="209">SEYCHELLES</option>
+<option value="210">SIERRA LEONE</option>
+<option value="284">SIKKIM</option>
+<option value="211">SINGAPORE</option>
+<option value="311">SINT MAARTEN (DUTCH PART)</option>
+<option value="212">SLOVAKIA</option>
+<option value="213">SLOVENIA</option>
+<option value="214">SOLOMON ISLANDS</option>
+<option value="215">SOMALIA</option>
+<option value="216">SOUTH AFRICA</option>
+<option value="217">SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS</option>
+<option value="325">SOUTH SUDAN</option>
+<option value="317">Soviet Union</option>
+<option value="218">SPAIN</option>
+<option value="219">SRI LANKA</option>
+<option value="264">STATELESS (1954 CONVENTION)</option>
+<option value="220">SUDAN</option>
+<option value="221">SURINAME</option>
+<option value="222">SVALBARD AND JAN MAYEN</option>
+<option value="223">SWAZILAND</option>
+<option value="224">SWEDEN</option>
+<option value="225">SWITZERLAND</option>
+<option value="226">SYRIAN ARAB REPUBLIC</option>
+<option value="227">TAIWAN, PROVINCE OF CHINA</option>
+<option value="228">TAJIKISTAN</option>
+<option value="229">TANZANIA, UNITED REPUBLIC OF</option>
+<option value="230">THAILAND</option>
+<option value="314">Tibet</option>
+<option value="231">TIMOR-LESTE</option>
+<option value="232">TOGO</option>
+<option value="233">TOKELAU</option>
+<option value="234">TONGA</option>
+<option value="235">TRINIDAD AND TOBAGO</option>
+<option value="236">TRISTAN DA CUNHA</option>
+<option value="237">TUNISIA</option>
+<option value="238">TURKEY</option>
+<option value="239">TURKMENISTAN</option>
+<option value="240">TURKS AND CAICOS ISLANDS</option>
+<option value="241">TUVALU</option>
+<option value="242">UGANDA</option>
+<option value="243">UKRAINE</option>
+<option value="316">UNHCR</option>
+<option value="244">UNITED ARAB EMIRATES</option>
+<option value="245">UNITED KINGDOM</option>
+<option value="313">United Nations (UN)</option>
+<option value="246">UNITED STATES</option>
+<option value="247">UNITED STATES MINOR OUTLYING ISLANDS</option>
+<option value="263">UNKNOWN</option>
+<option value="282">UNSPECIFIED</option>
+<option value="288">UPPER VOLTA (HAUTE-VOLTA)</option>
+<option value="248">URUGUAY</option>
+<option value="287">U.S. MISCELLANEOUS PACIFIC ISLANDS</option>
+<option value="249">USSR</option>
+<option value="250">UZBEKISTAN</option>
+<option value="251">VANUATU</option>
+<option value="289">VENDA</option>
+<option value="252">VENEZUELA, BOLIVARIAN REPUBLIC OF</option>
+<option value="271">VIET-NAM, DEMOCRATIC REPUBLIC OF (NORTH VIETNAM)</option>
+<option value="300">VIET-NAM, REPUBLIC OF (SOUTH VIETNAM)</option>
+<option value="253">VIET-NAM, SOCIALIST REPUBLIC OF</option>
+<option value="254">VIRGIN ISLANDS, BRITISH</option>
+<option value="255">VIRGIN ISLANDS, U.S.</option>
+<option value="290">WAKE ISLAND</option>
+<option value="256">WALLIS AND FUTUNA</option>
+<option value="257">WESTERN SAHARA</option>
+<option value="258">YEMEN</option>
+<option value="298">YEMEN ARAB REPUBLIC (NORTH YEMEN)</option>
+<option value="297">YEMEN, DEMOCRATIC (SOUTH YEMEN)</option>
+<option value="259">YUGOSLAVIA</option>
+<option value="260">ZAIRE</option>
+<option value="261">ZAMBIA</option>
+<option value="262">ZIMBABWE</option>
+</select>
+    </td>
+    </tr>
+	<tr><td colspan="2" /></tr>
+	<tr>
+		<td></td>
+		<td>
+			The details provided are subject to the provisions of the REGULATION (EU) 2016/679 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data (General Data Protection Regulation - GDPR) and of the Austrian Data Protection Act ( Federal Act on the Protection of Personal Data, Federal Law Gazette I no. 165/1999 – DPA) </br>
+The Austrian Mission/s abroad responsible for my appointment shall be the controller of the personal data provided by me. </br>
+This data is intended to schedule appointments for my application/appearance at an Austrian Mission. For this purpose, the Austrian Mission may use the personal details provided to contact if necessary to manage my appointment.</br>
+At any time I shall have the right to withdraw my consent to the use of the details provided and therefore notify the respective Austrian Mission abroad. Revocation shall lead to the immediate deletion of the details provided by me.</br>
+Unless I revoke my consent, the details shall be stored with effect from registration up to a maximum of 3 months after the date of the appointment. Thereafter, my data shall be automatically deleted.</br>
+I note that the appointment scheduling system is a service free of charge for applicants at Austrian Missions. Notwithstanding the rights and obligations resulting from the data protection regulations, neither I nor the Republic of Austria shall derive any legal entitlements or obligations from the provision of my personal data.
+		</td>
+	</tr>
+	<tr>
+		<td align="right">
+            <input checked="checked" data-val="true" data-val-range="Ich habe die Einwilligungserkl&amp;#228;rung gelesen und verstanden. Ich stimme ihr zu und best&amp;#228;tige, dass meine Angaben den Tatsachen entsprechen und ich von den angef&amp;#252;hrten Angeh&amp;#246;rigen zur Angabe ihrer personenbezogenen Daten bevollm&amp;#228;chtigt bin." data-val-range-max="True" data-val-range-min="True" data-val-required="The DSGVOAccepted field is required." id="DSGVOAccepted" name="DSGVOAccepted" type="checkbox" value="true" /><input name="DSGVOAccepted" type="hidden" value="false" />
+		</td>
+		<td>
+			<span class="field-validation-valid" data-valmsg-for="DSGVOAccepted" data-valmsg-replace="false">!</span> I have read and understood the declaration of consent. I agree to its terms and confirm that the information provided is correct and that I have been authorized by the family members listed in the registration form to provide their personal data.<div class="mandatory-indicator">&nbsp;*</div>
+		</td>
+	</tr>
+    <tr>
+    <td align="right">
+        <img src="/Captcha?token=1F84B465D4F65F7E48C05DD5524A916446C4F6CEC0446625C24628D7AA372E2E276C29D44E9B04F650164CC9DE41498D11B1C28CBA74E8987A534B17F4EA13078AF306CE0206A0F7D0FF376AF43FF7164FA044356AE95D7E8318F4560D167AE856BD97A2C5E7F108A3DD8351DB6A889D3D19DD810ABFADBFBF11D492F9018C3D7C49659781E365ECB058A3368E732E39B0266A0B05A94D602994E930CC3C0B47C0BE89B728F5AAAE14624D9D50A62892AE31ED352924DD11663D048684DFFEF6913274CF6335F3BE379BF59D5917C8B287CC2B713B18492D2BA20F064681591F14B00DB3C22CA23BFF890F4037571F95E4FAF3AA1EF3FBEAA0CE87B119C0A676898FB11E7C5840535B585533D9317B914E94BD6F6C627431BE9796478CBF24B9D684ABD951DFD3D92981E0145FA2CE98B3D812C9" alt="确认" class="captcha" />
+    </td>
+    <td>
+        <span class="field-validation-valid" data-valmsg-for="CaptchaText" data-valmsg-replace="false">!</span>
+        <input id="CaptchaText" name="CaptchaText" type="text" value="2183" />
+        请把图像中的文字输入旁边的框格里
+    </td>
+    </tr>
+    <tr>
+    <td>
+		<audio controls="controls">
+			<source src="/Captcha/Audio?token=1F84B465D4F65F7E48C05DD5524A916446C4F6CEC0446625C24628D7AA372E2E276C29D44E9B04F650164CC9DE41498D11B1C28CBA74E8987A534B17F4EA13078AF306CE0206A0F7D0FF376AF43FF7164FA044356AE95D7E8318F4560D167AE856BD97A2C5E7F108A3DD8351DB6A889D3D19DD810ABFADBFBF11D492F9018C3D7C49659781E365ECB058A3368E732E39B0266A0B05A94D602994E930CC3C0B47C0BE89B728F5AAAE14624D9D50A62892AE31ED352924DD11663D048684DFFEF6913274CF6335F3BE379BF59D5917C8B287CC2B713B18492D2BA20F064681591F14B00DB3C22CA23BFF890F4037571F95E4FAF3AA1EF3FBEAA0CE87B119C0A676898FB11E7C5840535B585533D9317B914E94BD6F6C627431BE9796478CBF24B9D684ABD951DFD3D92981E0145FA2CE98B3D812C9&amp;language=zh" type="audio/mpeg" />
+		</audio>
+	</td>
+    <td>
+		
+    </td>
+    </tr>
+</table>
+
+</div>
+<input type="submit" name="Command" value="返回" />
+<input type="submit" name="Command" value="下一步" />
+</form>
+<script type="text/javascript">
+	document.getElementById("CaptchaText").value = "";
+</script>
+        </div>
+    </div>
+</body>
+</html>
