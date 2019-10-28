@@ -121,3 +121,11 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+.vscode/
+.idea/
+
+captcha1.png
+captcha2.png
+result.html
+token.html
