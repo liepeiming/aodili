@@ -78,29 +78,30 @@ def fetchClients():
         print('服务器访问失败')
     """
     G_SHANGHAI_CLIENTS.append({
-        'CalendarType' : 'SHANGHAI',
-        'StartTime' : '2/1/2020',
-        'Firstname' : 'JIAN',
-        'Lastname' : 'YAO',
-        'DateOfBirth' : '17.06.1975',
-        'TraveldocumentNumber' : 'E70681011',
-        'Sex' : '1',
-        'Street' : '1104building9,xidi international district',
-        'Postcode' : '210019',
-        'City' : 'Nanjing',
-        'Country' : '46',
-        'Telephone' : '18702194830',
-        'Email' : 'harry_humail@hotmail.com',
-        'LastnameAtBirth' : 'YAO',
-        'NationalityAtBirth' : '49',
-        'CountryOfBirth' : '49',
-        'PlaceOfBirth' : 'JIANGSU',
-        'NationalityForApplication' : '49',
-        'TraveldocumentDateOfIssue' : '23.06.2016',
-        'TraveldocumentValidUntil' : '22.06.2026',
-        'TraveldocumentIssuingAuthority' : '49',
+        'CalendarType': 'SHANGHAI',
+        'StartTime': '2/1/2020',
+        'Firstname': 'JIAN',
+        'Lastname': 'YAO',
+        'DateOfBirth': '17.06.1975',
+        'TraveldocumentNumber': 'E70681011',
+        'Sex': '1',
+        'Street': '1104building9,xidi international district',
+        'Postcode': '210019',
+        'City': 'Nanjing',
+        'Country': '46',
+        'Telephone': '18702194830',
+        'Email': 'harry_humail@hotmail.com',
+        'LastnameAtBirth': 'YAO',
+        'NationalityAtBirth': '49',
+        'CountryOfBirth': '49',
+        'PlaceOfBirth': 'JIANGSU',
+        'NationalityForApplication': '49',
+        'TraveldocumentDateOfIssue': '23.06.2016',
+        'TraveldocumentValidUntil': '22.06.2026',
+        'TraveldocumentIssuingAuthority': '49',
     })
     return True
+    # """
 
 
 def setBaiduOCRClients(filepath):
@@ -128,6 +129,7 @@ def setBaiduOCRClients(filepath):
 
 
 def fetchBaiduOCRClients(start=0, end=5):
+    """
     r = requests.get(f'{SERV_URL}baiduClients/{start}/{end}', headers=HEADERS)
     if r.status_code == 200:
         clients = r.json()['data']
@@ -137,6 +139,99 @@ def fetchBaiduOCRClients(start=0, end=5):
             G_Q_OCR.put(baidu_ocr_client)
             # print(client)
         return True
+    """
+    # ------------------------------------------------------------
+    global G_Q_OCR
+    APP_ID = '16232754'
+    API_KEY = '6peGW76zeFyRB9QmYUdDBRrW'
+    SECRET_KEY = '1VXMjpITrniaXMp9tTkqHOmdVgiBcd1S'
+    baidu_ocr_client = AipOcr(APP_ID, API_KEY, SECRET_KEY)
+    G_Q_OCR.put(baidu_ocr_client)
+    # ------------------------------------------------------------
+    APP_ID = '16667240'
+    API_KEY = 'kGdWqRmYqCvMMAtwRmyi3gcr'
+    SECRET_KEY = 'kUx6tQ699OGf27SLvWkPxpWYbEUjpaxF'
+    baidu_ocr_client = AipOcr(APP_ID, API_KEY, SECRET_KEY)
+    G_Q_OCR.put(baidu_ocr_client)
+    # ------------------------------------------------------------
+    APP_ID = '16667411'
+    API_KEY = 'MO31imWKDp5uD4blCoelC3SG'
+    SECRET_KEY = 'XEftlFpcxDmD0NM4DPICiun0ydBTYHPy'
+    baidu_ocr_client = AipOcr(APP_ID, API_KEY, SECRET_KEY)
+    G_Q_OCR.put(baidu_ocr_client)
+    # ------------------------------------------------------------
+    APP_ID = '16667478'
+    API_KEY = 'dyrn8EIcBa97q3gSjQS3SpT7'
+    SECRET_KEY = '5Cs6fReXyF8jeEjcquWx4R3vyZlTwtK7'
+    baidu_ocr_client = AipOcr(APP_ID, API_KEY, SECRET_KEY)
+    G_Q_OCR.put(baidu_ocr_client)
+    # ------------------------------------------------------------
+    APP_ID = '16668509'
+    API_KEY = 'hTIi04vTlR6ka0kdD7CLveL0'
+    SECRET_KEY = 'TOfS1mVAt7SeizseffqAZpKBPnWuOAoV'
+    baidu_ocr_client = AipOcr(APP_ID, API_KEY, SECRET_KEY)
+    G_Q_OCR.put(baidu_ocr_client)
+    # ------------------------------------------------------------
+    APP_ID = '16850942'
+    API_KEY = 'QmDoi0uNCNycHjGl7xpAjIY3'
+    SECRET_KEY = 'E6Qm7YFbMNsVvIxNql0SU7VbKXLm1ovc'
+    baidu_ocr_client = AipOcr(APP_ID, API_KEY, SECRET_KEY)
+    G_Q_OCR.put(baidu_ocr_client)
+    # ------------------------------------------------------------
+    APP_ID = '16850943'
+    API_KEY = 'rCe4ZXDuegUaCqCPIT1s9zTK'
+    SECRET_KEY = 'R08Khxcrz4Ox66PGOQVNke7HY9snBiTz'
+    baidu_ocr_client = AipOcr(APP_ID, API_KEY, SECRET_KEY)
+    G_Q_OCR.put(baidu_ocr_client)
+    # ------------------------------------------------------------
+    APP_ID = '16850944'
+    API_KEY = 'xuPzEQsjgbKn4mezV0DLVvcC'
+    SECRET_KEY = 'SYO30yjpADFRdlM3596GKakrUlPifDQo'
+    baidu_ocr_client = AipOcr(APP_ID, API_KEY, SECRET_KEY)
+    G_Q_OCR.put(baidu_ocr_client)
+    # ------------------------------------------------------------
+    APP_ID = '16850945'
+    API_KEY = 'rLFDYB8uoLnPr5UqPZBSCaVl'
+    SECRET_KEY = 'bcUgs2V9HnPNWqB6rIZojHDvg4rK8TxQ'
+    baidu_ocr_client = AipOcr(APP_ID, API_KEY, SECRET_KEY)
+    G_Q_OCR.put(baidu_ocr_client)
+    # ------------------------------------------------------------
+    APP_ID = '16850946'
+    API_KEY = 'vlGEIZXImmwYb3fjHC3VkC7Q'
+    SECRET_KEY = 'LOZ8Si11rMDMrrPW2Oony7wpsFAcaRFA'
+    baidu_ocr_client = AipOcr(APP_ID, API_KEY, SECRET_KEY)
+    G_Q_OCR.put(baidu_ocr_client)
+    # ------------------------------------------------------------
+    APP_ID = '16850948'
+    API_KEY = 'T9k37200VOVUZzbw2nHT2Qb6'
+    SECRET_KEY = 'ld0Gk5dA4UvHlV5gU9GOZRM0y27ScgZx'
+    baidu_ocr_client = AipOcr(APP_ID, API_KEY, SECRET_KEY)
+    G_Q_OCR.put(baidu_ocr_client)
+    # ------------------------------------------------------------
+    APP_ID = '16850949'
+    API_KEY = 'db2lq5quwtVwuVthK7t5dE2Y'
+    SECRET_KEY = 'GGtqtbpvNj2zoMSaomiXLhj1O4LHNtQE'
+    baidu_ocr_client = AipOcr(APP_ID, API_KEY, SECRET_KEY)
+    G_Q_OCR.put(baidu_ocr_client)
+    # ------------------------------------------------------------
+    APP_ID = '16850950'
+    API_KEY = 'oxHOlryYwx0wMUKEDij49ma3'
+    SECRET_KEY = 'zrzFd0aOZGgOQDKEZIgs1O9esGSkFWhW'
+    baidu_ocr_client = AipOcr(APP_ID, API_KEY, SECRET_KEY)
+    G_Q_OCR.put(baidu_ocr_client)
+    # ------------------------------------------------------------
+    APP_ID = '16850951'
+    API_KEY = '200r3TiG24dK8PDO60Mi5LCl'
+    SECRET_KEY = 'nkI8pNQG8nGG6DiiBX5yrPk1zQKF61x8'
+    baidu_ocr_client = AipOcr(APP_ID, API_KEY, SECRET_KEY)
+    G_Q_OCR.put(baidu_ocr_client)
+    # ------------------------------------------------------------
+    APP_ID = '16850953'
+    API_KEY = 'sMTbLUC5IFkNzG4s7nH7zHEI'
+    SECRET_KEY = 'Qz4oU0xYy9hl5vVGgGpuCPDL1vCnh0Qa'
+    baidu_ocr_client = AipOcr(APP_ID, API_KEY, SECRET_KEY)
+    G_Q_OCR.put(baidu_ocr_client)
+    return True
 
 
 def loopFetchAndSetUnknownCalendarId(office):
@@ -155,9 +250,9 @@ def loopFetchAndSetUnknownCalendarId(office):
         'CalendarId': '0',
     }
     pattern = re.compile(r'<option value="(.*?)">.*?%s.*?</option>' % keyword.replace('"', '&quot;'))
+    print('开始抓取上海的CalendarId')
     while True:
         try:
-            print('开始抓取上海的CalendarId')
             r = requests.post(url, data=playload, headers=HEADERS)
             if r.status_code == 200:
                 text = r.text
@@ -309,6 +404,8 @@ def fetchStartTimes(client, targetDay):
             r = requests.post(urlOther, data=playloadOther, headers=HEADERS)
             if r.status_code == 200:
                 text = r.text
+                # with open('startTime.html', 'w', encoding='utf-8') as fp:
+                #     fp.write(text)
                 findResult = re.findall(targetStartTimePattern, text)
                 if findResult:
                     return findResult
