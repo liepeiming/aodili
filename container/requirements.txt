@@ -1,0 +1,9 @@
+gevent
+requests
+numpy
+opencv-python
+# SpeechRecognition
+baidu-aip
+flask
+flask-wtf
+flask-sqlalchemy
