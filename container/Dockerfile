@@ -1,4 +1,4 @@
-FROM python
+FROM python:3.6
 
 WORKDIR /www/mysite
 COPY requirements.txt /www/mysite/requirements.txt
