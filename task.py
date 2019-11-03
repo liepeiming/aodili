@@ -42,7 +42,7 @@ def fetchClients():
     从服务器获取客户信息,并分类(北京、上海、北京调试、上海调试)
     """
     global G_DEBUG, G_PEKING_CLIENTS, G_SHANGHAI_CLIENTS, G_PEKING_CLIENTS_DEBUG, G_SHANGHAI_CLIENTS_DEBUG
-    """
+    # """
     r = requests.get(f'{SERV_URL}clients', headers=HEADERS)
     if r.status_code == 200:
         res = r.json()
@@ -101,7 +101,7 @@ def fetchClients():
         'TraveldocumentIssuingAuthority': '49',
     })
     return True
-    # """
+    """
 
 
 def setBaiduOCRClients(filepath):
