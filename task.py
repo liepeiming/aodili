@@ -243,17 +243,20 @@ def loopFetchAndSetUnknownCalendarId(office):
     keyword = 'Niederlassung'  # 到时候要抓取的关键字
     # keyword = '长达6个月'  # 到时候要抓取的关键字
     url = f'{BASE_URL}?office={office}'
+    """
     playload = {
         'Language': 'zh',
         'Command': '变更',
         'Office': office,
         'CalendarId': '0',
     }
+    """
     pattern = re.compile(r'<option value="(.*?)">.*?%s.*?</option>' % keyword.replace('"', '&quot;'))
     print('开始抓取上海的CalendarId')
     while True:
         try:
-            r = requests.post(url, data=playload, headers=HEADERS)
+            # r = requests.post(url, data=playload, headers=HEADERS)
+            r = requests.get(url, headers=HEADERS)
             if r.status_code == 200:
                 text = r.text
                 searchResult = re.search(pattern, text)
